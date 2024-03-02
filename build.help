@@ -1,0 +1,23 @@
+using `NativeActivity` with egui, winit and wgpu.
+
+#### Build
+export ANDROID_NDK_HOME="path/to/ndk"
+export ANDROID_HOME="path/to/sdk"
+
+rustup target add aarch64-linux-android
+cargo install cargo-ndk
+
+cargo ndk -t arm64-v8a -o app/src/main/jniLibs/  build
+./gradlew build
+./gradlew installDebug
+
+#### Debug
+- find the `activity-name`: `adb shell dumpsys package <package-name> | grep -A 1 MAIN`
+
+example:
+```
+adb shell dumpsys package xyz.heng30.picon | grep -A 1 MAIN
+
+```
+
+- adb shell am start -n xyz.heng30.picon/android.app.NativeActivity

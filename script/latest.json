@@ -1,0 +1,3013 @@
+{
+  "status": {
+    "timestamp": "2024-03-02T05:35:51.885Z",
+    "error_code": 0,
+    "error_message": null,
+    "elapsed": 33,
+    "credit_count": 1,
+    "notice": null,
+    "total_count": 8890
+  },
+  "data": [
+    {
+      "id": 1,
+      "name": "Bitcoin",
+      "symbol": "BTC",
+      "slug": "bitcoin",
+      "infinite_supply": false,
+      "cmc_rank": 1,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:35:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 61927.344528836584,
+          "volume_24h": 39781492878.81166,
+          "volume_change_24h": -33.3421,
+          "percent_change_1h": -0.49054865,
+          "percent_change_24h": 0.81612197,
+          "percent_change_7d": 21.37658572,
+          "percent_change_30d": 47.40552814,
+          "percent_change_60d": 36.70843158,
+          "percent_change_90d": 57.04736514,
+          "market_cap": 1216398575805.9932,
+          "market_cap_dominance": 52.2289,
+          "fully_diluted_market_cap": 1300474235105.57,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:35:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 1027,
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "slug": "ethereum",
+      "infinite_supply": true,
+      "cmc_rank": 2,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:35:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 3416.6167649409726,
+          "volume_24h": 16590238502.877342,
+          "volume_change_24h": -35.3714,
+          "percent_change_1h": -0.57010558,
+          "percent_change_24h": 1.24741751,
+          "percent_change_7d": 15.83396785,
+          "percent_change_30d": 51.05055305,
+          "percent_change_60d": 42.98780464,
+          "percent_change_90d": 58.07672079,
+          "market_cap": 410468492072.6208,
+          "market_cap_dominance": 17.6244,
+          "fully_diluted_market_cap": 410468492072.62,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:35:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 825,
+      "name": "Tether USDt",
+      "symbol": "USDT",
+      "slug": "tether",
+      "infinite_supply": true,
+      "cmc_rank": 3,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 1.0012334616709289,
+          "volume_24h": 79882227589.75543,
+          "volume_change_24h": -22.7245,
+          "percent_change_1h": 0.00579705,
+          "percent_change_24h": 0.11910599,
+          "percent_change_7d": 0.14770489,
+          "percent_change_30d": 0.21008789,
+          "percent_change_60d": 0.05213691,
+          "percent_change_90d": 0.11503829,
+          "market_cap": 99301671382.00342,
+          "market_cap_dominance": 4.2637,
+          "fully_diluted_market_cap": 101725398504.75,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 1839,
+      "name": "BNB",
+      "symbol": "BNB",
+      "slug": "bnb",
+      "infinite_supply": false,
+      "cmc_rank": 4,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 410.1621384029466,
+          "volume_24h": 1589161302.0499766,
+          "volume_change_24h": -19.6683,
+          "percent_change_1h": -0.53959654,
+          "percent_change_24h": 0.84171932,
+          "percent_change_7d": 7.98345368,
+          "percent_change_30d": 37.80111495,
+          "percent_change_60d": 28.8030606,
+          "percent_change_90d": 80.03236649,
+          "market_cap": 61336504182.92393,
+          "market_cap_dominance": 2.6336,
+          "fully_diluted_market_cap": 61336504182.92,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 5426,
+      "name": "Solana",
+      "symbol": "SOL",
+      "slug": "solana",
+      "infinite_supply": true,
+      "cmc_rank": 5,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:35:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 128.78047652171597,
+          "volume_24h": 4058548606.330183,
+          "volume_change_24h": -41.8703,
+          "percent_change_1h": -0.84189363,
+          "percent_change_24h": -4.72979341,
+          "percent_change_7d": 27.2505538,
+          "percent_change_30d": 37.64973567,
+          "percent_change_60d": 14.45219887,
+          "percent_change_90d": 100.52945833,
+          "market_cap": 57027211554.119286,
+          "market_cap_dominance": 2.4486,
+          "fully_diluted_market_cap": 73517850367.88,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:35:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 52,
+      "name": "XRP",
+      "symbol": "XRP",
+      "slug": "xrp",
+      "infinite_supply": false,
+      "cmc_rank": 6,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:35:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 0.6229759812426237,
+          "volume_24h": 2467982349.856231,
+          "volume_change_24h": -25.8888,
+          "percent_change_1h": -1.10480023,
+          "percent_change_24h": 4.9336229,
+          "percent_change_7d": 15.40953875,
+          "percent_change_30d": 25.74879695,
+          "percent_change_60d": -1.81243837,
+          "percent_change_90d": 0.46330355,
+          "market_cap": 34054378525.95845,
+          "market_cap_dominance": 1.4622,
+          "fully_diluted_market_cap": 62297598124.26,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:35:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 3408,
+      "name": "USDC",
+      "symbol": "USDC",
+      "slug": "usd-coin",
+      "infinite_supply": false,
+      "cmc_rank": 7,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:35:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 0.9999497163168108,
+          "volume_24h": 7487869477.078412,
+          "volume_change_24h": -25.0962,
+          "percent_change_1h": -0.00533389,
+          "percent_change_24h": 0.00917746,
+          "percent_change_7d": -0.00397868,
+          "percent_change_30d": -0.01204013,
+          "percent_change_60d": -0.01400139,
+          "percent_change_90d": 0.02400278,
+          "market_cap": 29026514486.761353,
+          "market_cap_dominance": 1.247,
+          "fully_diluted_market_cap": 29026514486.76,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:35:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 2010,
+      "name": "Cardano",
+      "symbol": "ADA",
+      "slug": "cardano",
+      "infinite_supply": false,
+      "cmc_rank": 8,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 0.7504022356174429,
+          "volume_24h": 1249570528.4580224,
+          "volume_change_24h": -20.2042,
+          "percent_change_1h": -1.36905036,
+          "percent_change_24h": 11.64990662,
+          "percent_change_7d": 29.22807968,
+          "percent_change_30d": 53.39034265,
+          "percent_change_60d": 19.50374856,
+          "percent_change_90d": 89.16444216,
+          "market_cap": 26624107011.97405,
+          "market_cap_dominance": 1.1428,
+          "fully_diluted_market_cap": 33768100602.78,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 74,
+      "name": "Dogecoin",
+      "symbol": "DOGE",
+      "slug": "dogecoin",
+      "infinite_supply": true,
+      "cmc_rank": 9,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:35:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 0.1396318767816944,
+          "volume_24h": 4480535680.285435,
+          "volume_change_24h": 13.7437,
+          "percent_change_1h": -1.89903202,
+          "percent_change_24h": 15.63127409,
+          "percent_change_7d": 64.36578537,
+          "percent_change_30d": 77.00585578,
+          "percent_change_60d": 50.04091589,
+          "percent_change_90d": 62.90113033,
+          "market_cap": 20008635850.246475,
+          "market_cap_dominance": 0.8591,
+          "fully_diluted_market_cap": 20008635850.25,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:35:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 5805,
+      "name": "Avalanche",
+      "symbol": "AVAX",
+      "slug": "avalanche",
+      "infinite_supply": false,
+      "cmc_rank": 10,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 42.94283618779332,
+          "volume_24h": 715401197.9872851,
+          "volume_change_24h": -31.0375,
+          "percent_change_1h": -1.63250403,
+          "percent_change_24h": 0.69065926,
+          "percent_change_7d": 18.79327689,
+          "percent_change_30d": 30.64364738,
+          "percent_change_60d": 1.19191196,
+          "percent_change_90d": 93.08377507,
+          "market_cap": 16199881787.231897,
+          "market_cap_dominance": 0.6956,
+          "fully_diluted_market_cap": 30918842055.21,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 1975,
+      "name": "Chainlink",
+      "symbol": "LINK",
+      "slug": "chainlink",
+      "infinite_supply": false,
+      "cmc_rank": 11,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 21.239035728556274,
+          "volume_24h": 642472659.2406012,
+          "volume_change_24h": -15.8565,
+          "percent_change_1h": 2.31461378,
+          "percent_change_24h": 7.74126757,
+          "percent_change_7d": 16.11828024,
+          "percent_change_30d": 37.17324519,
+          "percent_change_60d": 33.77161593,
+          "percent_change_90d": 32.64861861,
+          "market_cap": 12469437248.681068,
+          "market_cap_dominance": 0.5352,
+          "fully_diluted_market_cap": 21239035728.56,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 1958,
+      "name": "TRON",
+      "symbol": "TRX",
+      "slug": "tron",
+      "infinite_supply": true,
+      "cmc_rank": 12,
+      "self_reported_circulating_supply": 71659659264,
+      "self_reported_market_cap": 10090347246.39728,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 0.14080931098518934,
+          "volume_24h": 349123197.80202955,
+          "volume_change_24h": -18.0271,
+          "percent_change_1h": -0.12136571,
+          "percent_change_24h": -0.28034351,
+          "percent_change_7d": 1.93695872,
+          "percent_change_30d": 25.21151734,
+          "percent_change_60d": 29.92910652,
+          "percent_change_90d": 36.14355475,
+          "market_cap": 12386607871.569414,
+          "market_cap_dominance": 0.5319,
+          "fully_diluted_market_cap": 12386608652.25,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 5994,
+      "name": "Shiba Inu",
+      "symbol": "SHIB",
+      "slug": "shiba-inu",
+      "infinite_supply": false,
+      "cmc_rank": 13,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 0.000020219000108249856,
+          "volume_24h": 4196902406.6949325,
+          "volume_change_24h": 134.3424,
+          "percent_change_1h": 1.9892452,
+          "percent_change_24h": 58.60529156,
+          "percent_change_7d": 112.9836208,
+          "percent_change_30d": 127.87680437,
+          "percent_change_60d": 87.37698082,
+          "percent_change_90d": 136.98151136,
+          "market_cap": 11914845599.81557,
+          "market_cap_dominance": 0.5116,
+          "fully_diluted_market_cap": 11919790398.41,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 6636,
+      "name": "Polkadot",
+      "symbol": "DOT",
+      "slug": "polkadot-new",
+      "infinite_supply": true,
+      "cmc_rank": 14,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 8.853520237636674,
+          "volume_24h": 415773007.8328336,
+          "volume_change_24h": -14.8446,
+          "percent_change_1h": -1.55245485,
+          "percent_change_24h": 5.22275001,
+          "percent_change_7d": 14.70365609,
+          "percent_change_30d": 33.47350983,
+          "percent_change_60d": 2.06484967,
+          "percent_change_90d": 59.680131,
+          "market_cap": 11419993673.464785,
+          "market_cap_dominance": 0.4903,
+          "fully_diluted_market_cap": 12545811571.7,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 3890,
+      "name": "Polygon",
+      "symbol": "MATIC",
+      "slug": "polygon",
+      "infinite_supply": false,
+      "cmc_rank": 15,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 1.063000075618786,
+          "volume_24h": 632556524.7288383,
+          "volume_change_24h": -13.984,
+          "percent_change_1h": -0.70444349,
+          "percent_change_24h": 4.32853427,
+          "percent_change_7d": 6.55258853,
+          "percent_change_30d": 38.0544812,
+          "percent_change_60d": 4.2675278,
+          "percent_change_90d": 30.95252774,
+          "market_cap": 10522800907.94322,
+          "market_cap_dominance": 0.4518,
+          "fully_diluted_market_cap": 10630000756.19,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 11419,
+      "name": "Toncoin",
+      "symbol": "TON",
+      "slug": "toncoin",
+      "infinite_supply": true,
+      "cmc_rank": 16,
+      "self_reported_circulating_supply": 3414166606,
+      "self_reported_market_cap": 9241995171.240517,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:35:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 2.706954943264569,
+          "volume_24h": 167564310.6958952,
+          "volume_change_24h": 10.9926,
+          "percent_change_1h": -1.69406258,
+          "percent_change_24h": 5.67902856,
+          "percent_change_7d": 28.95425883,
+          "percent_change_30d": 32.30998928,
+          "percent_change_60d": 14.45030995,
+          "percent_change_90d": 10.70028243,
+          "market_cap": 9387833949.161076,
+          "market_cap_dominance": 0.4031,
+          "fully_diluted_market_cap": 13815081326.54,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:35:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 1831,
+      "name": "Bitcoin Cash",
+      "symbol": "BCH",
+      "slug": "bitcoin-cash",
+      "infinite_supply": false,
+      "cmc_rank": 17,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 405.611487181719,
+          "volume_24h": 1155499142.458495,
+          "volume_change_24h": 85.1348,
+          "percent_change_1h": 0.03944886,
+          "percent_change_24h": 29.05091266,
+          "percent_change_7d": 52.11237339,
+          "percent_change_30d": 74.26431987,
+          "percent_change_60d": 51.48895432,
+          "percent_change_90d": 76.2753455,
+          "market_cap": 7973087258.028486,
+          "market_cap_dominance": 0.3424,
+          "fully_diluted_market_cap": 8517841230.82,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 7083,
+      "name": "Uniswap",
+      "symbol": "UNI",
+      "slug": "uniswap",
+      "infinite_supply": false,
+      "cmc_rank": 18,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": 1.37173971,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 12.709856172981683,
+          "volume_24h": 614945263.7048895,
+          "volume_change_24h": 5.412,
+          "percent_change_1h": 1.50417846,
+          "percent_change_24h": 15.52421935,
+          "percent_change_7d": 7.00566104,
+          "percent_change_30d": 112.0152733,
+          "percent_change_60d": 65.55868312,
+          "percent_change_90d": 107.34549165,
+          "market_cap": 7609850221.280367,
+          "market_cap_dominance": 0.3269,
+          "fully_diluted_market_cap": 12709856172.98,
+          "tvl": 5547590534.96559,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "Litecoin",
+      "symbol": "LTC",
+      "slug": "litecoin",
+      "infinite_supply": false,
+      "cmc_rank": 19,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:35:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 90.82502043977657,
+          "volume_24h": 791266917.5525705,
+          "volume_change_24h": -16.6642,
+          "percent_change_1h": 0.69286268,
+          "percent_change_24h": 6.7231076,
+          "percent_change_7d": 30.73566798,
+          "percent_change_30d": 36.55520633,
+          "percent_change_60d": 21.0535226,
+          "percent_change_90d": 26.42709081,
+          "market_cap": 6745089476.573491,
+          "market_cap_dominance": 0.2896,
+          "fully_diluted_market_cap": 7629301716.94,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:35:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 8916,
+      "name": "Internet Computer",
+      "symbol": "ICP",
+      "slug": "internet-computer",
+      "infinite_supply": true,
+      "cmc_rank": 20,
+      "self_reported_circulating_supply": 459568526.955649,
+      "self_reported_market_cap": 6163918570.26549,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 13.412403610616144,
+          "volume_24h": 174228682.19413143,
+          "volume_change_24h": -20.3108,
+          "percent_change_1h": 0.27584875,
+          "percent_change_24h": 4.49646726,
+          "percent_change_7d": 8.11071357,
+          "percent_change_30d": 18.6385357,
+          "percent_change_60d": 1.045487,
+          "percent_change_90d": 181.68780598,
+          "market_cap": 6163918332.379831,
+          "market_cap_dominance": 0.2647,
+          "fully_diluted_market_cap": 6907209869.09,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 4943,
+      "name": "Dai",
+      "symbol": "DAI",
+      "slug": "multi-collateral-dai",
+      "infinite_supply": true,
+      "cmc_rank": 21,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 1.000144634526361,
+          "volume_24h": 248041804.7482871,
+          "volume_change_24h": -11.8341,
+          "percent_change_1h": -0.00444038,
+          "percent_change_24h": 0.03545841,
+          "percent_change_7d": 0.02228667,
+          "percent_change_30d": 0.0341034,
+          "percent_change_60d": 0.00673901,
+          "percent_change_90d": 0.07735667,
+          "market_cap": 5348662085.080484,
+          "market_cap_dominance": 0.2297,
+          "fully_diluted_market_cap": 5348662085.08,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 1321,
+      "name": "Ethereum Classic",
+      "symbol": "ETC",
+      "slug": "ethereum-classic",
+      "infinite_supply": false,
+      "cmc_rank": 22,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:35:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 33.123125131768525,
+          "volume_24h": 664945431.6926031,
+          "volume_change_24h": 26.0136,
+          "percent_change_1h": -1.94923376,
+          "percent_change_24h": 12.10639747,
+          "percent_change_7d": 29.29361951,
+          "percent_change_30d": 39.79525938,
+          "percent_change_60d": 45.66588542,
+          "percent_change_90d": 68.18062745,
+          "market_cap": 4830108301.119177,
+          "market_cap_dominance": 0.2074,
+          "fully_diluted_market_cap": 6979042465.26,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:35:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 3794,
+      "name": "Cosmos",
+      "symbol": "ATOM",
+      "slug": "cosmos",
+      "infinite_supply": true,
+      "cmc_rank": 23,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 11.819845524259618,
+          "volume_24h": 227260082.17661476,
+          "volume_change_24h": -26.16,
+          "percent_change_1h": -1.253405,
+          "percent_change_24h": 4.06616586,
+          "percent_change_7d": 17.23169659,
+          "percent_change_30d": 31.13072727,
+          "percent_change_60d": 4.99816194,
+          "percent_change_90d": 24.07920375,
+          "market_cap": 4593810314.126043,
+          "market_cap_dominance": 0.1972,
+          "fully_diluted_market_cap": 4593810314.13,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 3957,
+      "name": "UNUS SED LEO",
+      "symbol": "LEO",
+      "slug": "unus-sed-leo",
+      "infinite_supply": false,
+      "cmc_rank": 24,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 4.797571822341394,
+          "volume_24h": 1599781.99754776,
+          "volume_change_24h": -8.1589,
+          "percent_change_1h": -0.04957521,
+          "percent_change_24h": -0.05134285,
+          "percent_change_7d": 16.66255515,
+          "percent_change_30d": 21.18887987,
+          "percent_change_60d": 20.82178599,
+          "percent_change_90d": 24.32847729,
+          "market_cap": 4448497147.362945,
+          "market_cap_dominance": 0.191,
+          "fully_diluted_market_cap": 4726757282.65,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 10603,
+      "name": "Immutable",
+      "symbol": "IMX",
+      "slug": "immutable-x",
+      "infinite_supply": false,
+      "cmc_rank": 25,
+      "self_reported_circulating_supply": 570354831,
+      "self_reported_market_cap": 1819929915.5606744,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:35:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 3.1908731488603355,
+          "volume_24h": 96496131.9118773,
+          "volume_change_24h": -19.3048,
+          "percent_change_1h": -0.53831948,
+          "percent_change_24h": -0.47191303,
+          "percent_change_7d": 4.68382855,
+          "percent_change_30d": 66.11755433,
+          "percent_change_60d": 35.60233037,
+          "percent_change_90d": 127.56448907,
+          "market_cap": 4432839663.381603,
+          "market_cap_dominance": 0.1903,
+          "fully_diluted_market_cap": 6381746297.72,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:35:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 2280,
+      "name": "Filecoin",
+      "symbol": "FIL",
+      "slug": "filecoin",
+      "infinite_supply": false,
+      "cmc_rank": 26,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:35:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 8.520456322266602,
+          "volume_24h": 539668726.8365761,
+          "volume_change_24h": -30.5271,
+          "percent_change_1h": -1.93850259,
+          "percent_change_24h": 2.12632059,
+          "percent_change_7d": 3.8867717,
+          "percent_change_30d": 73.84756608,
+          "percent_change_60d": 13.25342143,
+          "percent_change_90d": 83.83197895,
+          "market_cap": 4418071829.821934,
+          "market_cap_dominance": 0.1897,
+          "fully_diluted_market_cap": 16707450698.02,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:35:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 21794,
+      "name": "Aptos",
+      "symbol": "APT",
+      "slug": "aptos",
+      "infinite_supply": true,
+      "cmc_rank": 27,
+      "self_reported_circulating_supply": 130000000,
+      "self_reported_market_cap": 1529337171.8575637,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:35:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 11.764132091212028,
+          "volume_24h": 281614598.65384084,
+          "volume_change_24h": -41.6021,
+          "percent_change_1h": -1.94884198,
+          "percent_change_24h": -0.68690572,
+          "percent_change_7d": 26.23599464,
+          "percent_change_30d": 34.98502868,
+          "percent_change_60d": 16.18465134,
+          "percent_change_90d": 58.66952821,
+          "market_cap": 4325265427.564687,
+          "market_cap_dominance": 0.1857,
+          "fully_diluted_market_cap": 12749662671.58,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:35:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 6535,
+      "name": "NEAR Protocol",
+      "symbol": "NEAR",
+      "slug": "near-protocol",
+      "infinite_supply": false,
+      "cmc_rank": 29,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:35:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 4.014268481243217,
+          "volume_24h": 289305402.2499638,
+          "volume_change_24h": -23.7295,
+          "percent_change_1h": -1.68186838,
+          "percent_change_24h": -0.49878483,
+          "percent_change_7d": 16.03073518,
+          "percent_change_30d": 45.25982647,
+          "percent_change_60d": 1.16681139,
+          "percent_change_90d": 102.27996631,
+          "market_cap": 4189940802.1769395,
+          "market_cap_dominance": 0.1799,
+          "fully_diluted_market_cap": 4729876399.5,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:35:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 4847,
+      "name": "Stacks",
+      "symbol": "STX",
+      "slug": "stacks",
+      "infinite_supply": false,
+      "cmc_rank": 28,
+      "self_reported_circulating_supply": 1048765672.087772,
+      "self_reported_market_cap": 3046739215.7394557,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 2.9050714538304145,
+          "volume_24h": 192669803.02722606,
+          "volume_change_24h": -40.2344,
+          "percent_change_1h": -0.42698417,
+          "percent_change_24h": -1.17807406,
+          "percent_change_7d": 16.23900212,
+          "percent_change_30d": 98.42438526,
+          "percent_change_60d": 71.53189985,
+          "percent_change_90d": 241.61844193,
+          "market_cap": 4195678528.490354,
+          "market_cap_dominance": 0.1802,
+          "fully_diluted_market_cap": 5281419903.06,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 22974,
+      "name": "Bittensor",
+      "symbol": "TAO",
+      "slug": "bittensor",
+      "infinite_supply": false,
+      "cmc_rank": 30,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 660.3127305595333,
+          "volume_24h": 48348469.36387792,
+          "volume_change_24h": 33.3225,
+          "percent_change_1h": -1.28449042,
+          "percent_change_24h": -5.52586592,
+          "percent_change_7d": 12.36550988,
+          "percent_change_30d": 46.95785896,
+          "percent_change_60d": 136.87902208,
+          "percent_change_90d": 105.94566925,
+          "market_cap": 4189667767.581975,
+          "market_cap_dominance": 0.1798,
+          "fully_diluted_market_cap": 13866567341.75,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 7226,
+      "name": "Injective",
+      "symbol": "INJ",
+      "slug": "injective",
+      "infinite_supply": false,
+      "cmc_rank": 31,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:35:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 44.008902292202556,
+          "volume_24h": 314479244.9758111,
+          "volume_change_24h": -17.951,
+          "percent_change_1h": -0.15035479,
+          "percent_change_24h": 8.04173598,
+          "percent_change_7d": 31.27098481,
+          "percent_change_30d": 31.49517291,
+          "percent_change_60d": 12.59047644,
+          "percent_change_90d": 145.9768665,
+          "market_cap": 4110431474.0917187,
+          "market_cap_dominance": 0.1765,
+          "fully_diluted_market_cap": 4400890229.22,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:35:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 4642,
+      "name": "Hedera",
+      "symbol": "HBAR",
+      "slug": "hedera",
+      "infinite_supply": false,
+      "cmc_rank": 32,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 0.11779010963207379,
+          "volume_24h": 111378749.52102877,
+          "volume_change_24h": -38.4749,
+          "percent_change_1h": 0.18415966,
+          "percent_change_24h": 0.822099,
+          "percent_change_7d": 9.31369957,
+          "percent_change_30d": 71.38689719,
+          "percent_change_60d": 25.05922451,
+          "percent_change_90d": 90.78339909,
+          "market_cap": 3967796582.7107677,
+          "market_cap_dominance": 0.1704,
+          "fully_diluted_market_cap": 5889505481.6,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 20396,
+      "name": "Kaspa",
+      "symbol": "KAS",
+      "slug": "kaspa",
+      "infinite_supply": false,
+      "cmc_rank": 33,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 0.17222056231362984,
+          "volume_24h": 64539111.482632,
+          "volume_change_24h": -20.2611,
+          "percent_change_1h": 0.08684311,
+          "percent_change_24h": 0.13590642,
+          "percent_change_7d": 5.83522362,
+          "percent_change_30d": 74.76332588,
+          "percent_change_60d": 46.43756001,
+          "percent_change_90d": 23.1412823,
+          "market_cap": 3939105250.5738306,
+          "market_cap_dominance": 0.1692,
+          "fully_diluted_market_cap": 4942730138.4,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 11840,
+      "name": "Optimism",
+      "symbol": "OP",
+      "slug": "optimism-ethereum",
+      "infinite_supply": false,
+      "cmc_rank": 34,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 3.830934887811619,
+          "volume_24h": 252906271.7217917,
+          "volume_change_24h": -13.4961,
+          "percent_change_1h": -1.03364235,
+          "percent_change_24h": 1.70253246,
+          "percent_change_7d": 8.70999165,
+          "percent_change_30d": 33.53217833,
+          "percent_change_60d": -1.43997508,
+          "percent_change_90d": 122.17256626,
+          "market_cap": 3854462957.518603,
+          "market_cap_dominance": 0.1655,
+          "fully_diluted_market_cap": 16453740056.26,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 512,
+      "name": "Stellar",
+      "symbol": "XLM",
+      "slug": "stellar",
+      "infinite_supply": false,
+      "cmc_rank": 35,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 0.13201807631622095,
+          "volume_24h": 190504399.54030013,
+          "volume_change_24h": -8.2026,
+          "percent_change_1h": -0.32398443,
+          "percent_change_24h": 6.31728939,
+          "percent_change_7d": 13.43021659,
+          "percent_change_30d": 21.22288045,
+          "percent_change_60d": -0.62889585,
+          "percent_change_90d": 8.9940197,
+          "market_cap": 3767534564.9507217,
+          "market_cap_dominance": 0.1618,
+          "fully_diluted_market_cap": 6601142347.66,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 3077,
+      "name": "VeChain",
+      "symbol": "VET",
+      "slug": "vechain",
+      "infinite_supply": false,
+      "cmc_rank": 36,
+      "self_reported_circulating_supply": 72714516834,
+      "self_reported_market_cap": 3629680704.358066,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:35:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 0.049916864780168525,
+          "volume_24h": 112805890.35445409,
+          "volume_change_24h": -23.1502,
+          "percent_change_1h": -1.00457079,
+          "percent_change_24h": 3.65050733,
+          "percent_change_7d": 15.20670471,
+          "percent_change_30d": 80.47386819,
+          "percent_change_60d": 37.39101387,
+          "percent_change_90d": 117.89510509,
+          "market_cap": 3629680704.358066,
+          "market_cap_dominance": 0.1558,
+          "fully_diluted_market_cap": 4292103673.55,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:35:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 26081,
+      "name": "First Digital USD",
+      "symbol": "FDUSD",
+      "slug": "first-digital-usd",
+      "infinite_supply": false,
+      "cmc_rank": 37,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 0.9983833119333951,
+          "volume_24h": 9902366457.019875,
+          "volume_change_24h": -32.4057,
+          "percent_change_1h": -0.04175688,
+          "percent_change_24h": 0.11930327,
+          "percent_change_7d": -0.31104224,
+          "percent_change_30d": -0.02710916,
+          "percent_change_60d": -0.04506737,
+          "percent_change_90d": -0.12642634,
+          "market_cap": 3247279001.8959117,
+          "market_cap_dominance": 0.1395,
+          "fully_diluted_market_cap": 3247279001.9,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 3635,
+      "name": "Cronos",
+      "symbol": "CRO",
+      "slug": "cronos",
+      "infinite_supply": false,
+      "cmc_rank": 38,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 0.1256595498342284,
+          "volume_24h": 59656817.43914354,
+          "volume_change_24h": 91.4413,
+          "percent_change_1h": 1.89460834,
+          "percent_change_24h": 12.42246746,
+          "percent_change_7d": 36.42521781,
+          "percent_change_30d": 55.59191805,
+          "percent_change_60d": 23.54843904,
+          "percent_change_90d": 36.2572481,
+          "market_cap": 3174538927.992668,
+          "market_cap_dominance": 0.1363,
+          "fully_diluted_market_cap": 3802836677.16,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 3897,
+      "name": "OKB",
+      "symbol": "OKB",
+      "slug": "okb",
+      "infinite_supply": false,
+      "cmc_rank": 39,
+      "self_reported_circulating_supply": 246638974,
+      "self_reported_market_cap": 13020102406.955084,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 52.790125566104095,
+          "volume_24h": 9837925.10401527,
+          "volume_change_24h": -16.9434,
+          "percent_change_1h": 0.39596737,
+          "percent_change_24h": 1.77048655,
+          "percent_change_7d": 4.57214709,
+          "percent_change_30d": 9.78006467,
+          "percent_change_60d": -6.81662747,
+          "percent_change_90d": -8.88988953,
+          "market_cap": 3167407533.9662457,
+          "market_cap_dominance": 0.136,
+          "fully_diluted_market_cap": 15837037669.83,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 8000,
+      "name": "Lido DAO",
+      "symbol": "LDO",
+      "slug": "lido-dao",
+      "infinite_supply": false,
+      "cmc_rank": 40,
+      "self_reported_circulating_supply": 891677957.6732486,
+      "self_reported_market_cap": 3029913878.4349036,
+      "tvl_ratio": 0.08909679,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 3.3979912280675686,
+          "volume_24h": 110099762.78846194,
+          "volume_change_24h": -23.2102,
+          "percent_change_1h": -0.45582522,
+          "percent_change_24h": -0.70999965,
+          "percent_change_7d": 9.50503969,
+          "percent_change_30d": 23.32907344,
+          "percent_change_60d": 9.17830349,
+          "percent_change_90d": 41.38323785,
+          "market_cap": 3029913706.701801,
+          "market_cap_dominance": 0.1301,
+          "fully_diluted_market_cap": 3397991228.07,
+          "tvl": 34006989163.95271,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 27075,
+      "name": "Mantle",
+      "symbol": "MNT",
+      "slug": "mantle",
+      "infinite_supply": false,
+      "cmc_rank": 41,
+      "self_reported_circulating_supply": 1843669839,
+      "self_reported_market_cap": 1716254894.1206381,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:35:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 0.930890584537375,
+          "volume_24h": 177316689.96583244,
+          "volume_change_24h": -54.6243,
+          "percent_change_1h": -0.11125948,
+          "percent_change_24h": 1.97867706,
+          "percent_change_7d": 20.90897029,
+          "percent_change_30d": 64.99502636,
+          "percent_change_60d": 41.28532964,
+          "percent_change_90d": 70.9794703,
+          "market_cap": 3008323845.5302863,
+          "market_cap_dominance": 0.1292,
+          "fully_diluted_market_cap": 5789503446.72,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:35:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 6719,
+      "name": "The Graph",
+      "symbol": "GRT",
+      "slug": "the-graph",
+      "infinite_supply": false,
+      "cmc_rank": 42,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 0.3150057190444532,
+          "volume_24h": 439323662.8952195,
+          "volume_change_24h": 72.8239,
+          "percent_change_1h": 0.05845595,
+          "percent_change_24h": 6.5075376,
+          "percent_change_7d": 20.7189347,
+          "percent_change_30d": 107.30092524,
+          "percent_change_60d": 42.42950345,
+          "percent_change_90d": 108.12832128,
+          "market_cap": 2966607694.765158,
+          "market_cap_dominance": 0.1273,
+          "fully_diluted_market_cap": 3400446121.2,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 5690,
+      "name": "Render",
+      "symbol": "RNDR",
+      "slug": "render",
+      "infinite_supply": false,
+      "cmc_rank": 43,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 7.632025965497436,
+          "volume_24h": 310222040.30194664,
+          "volume_change_24h": -1.116,
+          "percent_change_1h": -0.92159079,
+          "percent_change_24h": 0.16875115,
+          "percent_change_7d": 7.45575499,
+          "percent_change_30d": 70.86750546,
+          "percent_change_60d": 55.42500079,
+          "percent_change_90d": 112.50079187,
+          "market_cap": 2886870654.765185,
+          "market_cap_dominance": 0.124,
+          "fully_diluted_market_cap": 4097412740.5,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 22861,
+      "name": "Celestia",
+      "symbol": "TIA",
+      "slug": "celestia",
+      "infinite_supply": false,
+      "cmc_rank": 44,
+      "self_reported_circulating_supply": 141043527.75,
+      "self_reported_market_cap": 2368299559.650386,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:35:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 16.79126718843989,
+          "volume_24h": 135801131.567779,
+          "volume_change_24h": -39.6494,
+          "percent_change_1h": -0.38162913,
+          "percent_change_24h": 0.11210752,
+          "percent_change_7d": 1.43078822,
+          "percent_change_30d": 4.37878348,
+          "percent_change_60d": 24.34728498,
+          "percent_change_90d": 89.27523246,
+          "market_cap": 2817293443.920494,
+          "market_cap_dominance": 0.121,
+          "fully_diluted_market_cap": 17240261072.71,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:35:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 328,
+      "name": "Monero",
+      "symbol": "XMR",
+      "slug": "monero",
+      "infinite_supply": true,
+      "cmc_rank": 45,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:35:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 140.920257158269,
+          "volume_24h": 67924302.2448796,
+          "volume_change_24h": 2.2768,
+          "percent_change_1h": -0.05482675,
+          "percent_change_24h": 1.60535837,
+          "percent_change_7d": 13.00132692,
+          "percent_change_30d": -15.6351749,
+          "percent_change_60d": -17.29988597,
+          "percent_change_90d": -18.49117498,
+          "market_cap": 2593609008.9338055,
+          "market_cap_dominance": 0.1114,
+          "fully_diluted_market_cap": 2593609008.93,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:35:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 11841,
+      "name": "Arbitrum",
+      "symbol": "ARB",
+      "slug": "arbitrum",
+      "infinite_supply": false,
+      "cmc_rank": 46,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 1.9721825096110428,
+          "volume_24h": 527916240.0663565,
+          "volume_change_24h": -42.1683,
+          "percent_change_1h": -0.84783324,
+          "percent_change_24h": -0.15279388,
+          "percent_change_7d": 9.03054349,
+          "percent_change_30d": 16.28085388,
+          "percent_change_60d": 12.45235542,
+          "percent_change_90d": 78.95368244,
+          "market_cap": 2514532699.7540793,
+          "market_cap_dominance": 0.108,
+          "fully_diluted_market_cap": 19721825096.11,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 23149,
+      "name": "Sei",
+      "symbol": "SEI",
+      "slug": "sei",
+      "infinite_supply": false,
+      "cmc_rank": 47,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 0.8459697202503467,
+          "volume_24h": 319525156.3935937,
+          "volume_change_24h": -37.8635,
+          "percent_change_1h": -0.97252084,
+          "percent_change_24h": -0.86554034,
+          "percent_change_7d": 6.10051059,
+          "percent_change_30d": 36.08707783,
+          "percent_change_60d": 11.58573364,
+          "percent_change_90d": 213.98116455,
+          "market_cap": 2157222786.638384,
+          "market_cap_dominance": 0.0926,
+          "fully_diluted_market_cap": 8459697202.5,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 20947,
+      "name": "Sui",
+      "symbol": "SUI",
+      "slug": "sui",
+      "infinite_supply": false,
+      "cmc_rank": 48,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 1.6531863678754768,
+          "volume_24h": 360352238.2555806,
+          "volume_change_24h": -29.2944,
+          "percent_change_1h": 0.07855607,
+          "percent_change_24h": -3.99978449,
+          "percent_change_7d": 3.02113684,
+          "percent_change_30d": 13.05855018,
+          "percent_change_60d": 83.09680594,
+          "percent_change_90d": 167.79907633,
+          "market_cap": 2034934737.8474476,
+          "market_cap_dominance": 0.0874,
+          "fully_diluted_market_cap": 16531863678.75,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 4157,
+      "name": "THORChain",
+      "symbol": "RUNE",
+      "slug": "thorchain",
+      "infinite_supply": false,
+      "cmc_rank": 49,
+      "self_reported_circulating_supply": 198754229,
+      "self_reported_market_cap": 1147526231.8722284,
+      "tvl_ratio": 5.30619377,
+      "last_updated": "2024-03-02T05:35:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 5.773594039461814,
+          "volume_24h": 269961576.7652845,
+          "volume_change_24h": -35.0783,
+          "percent_change_1h": -0.57517313,
+          "percent_change_24h": 0.39020745,
+          "percent_change_7d": 9.02853438,
+          "percent_change_30d": 28.33023061,
+          "percent_change_60d": -0.33642273,
+          "percent_change_90d": -18.62050225,
+          "market_cap": 1967576986.9249158,
+          "market_cap_dominance": 0.0845,
+          "fully_diluted_market_cap": 2787710211.99,
+          "tvl": 370807601.97935,
+          "last_updated": "2024-03-02T05:35:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 1518,
+      "name": "Maker",
+      "symbol": "MKR",
+      "slug": "maker",
+      "infinite_supply": false,
+      "cmc_rank": 50,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": 0.27775007,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 2112.0856710159383,
+          "volume_24h": 56502383.19269756,
+          "volume_change_24h": -30.3389,
+          "percent_change_1h": -0.77243078,
+          "percent_change_24h": -0.62860428,
+          "percent_change_7d": 4.94336528,
+          "percent_change_30d": 8.12688773,
+          "percent_change_60d": 27.853802,
+          "percent_change_90d": 36.94008038,
+          "market_cap": 1950063574.728817,
+          "market_cap_dominance": 0.0837,
+          "fully_diluted_market_cap": 2123864772.8,
+          "tvl": 7020929308.44429,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 28298,
+      "name": "Beam",
+      "symbol": "BEAM",
+      "slug": "onbeam",
+      "infinite_supply": false,
+      "cmc_rank": 51,
+      "self_reported_circulating_supply": 52209617302.14641,
+      "self_reported_market_cap": 1948844893.828672,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 0.03732731620211574,
+          "volume_24h": 51788342.91670243,
+          "volume_change_24h": -14.5529,
+          "percent_change_1h": 0.45636917,
+          "percent_change_24h": 8.52043177,
+          "percent_change_7d": 18.57998522,
+          "percent_change_30d": 122.60378328,
+          "percent_change_60d": 102.92274528,
+          "percent_change_90d": 225.38905675,
+          "market_cap": 1948841830.4471898,
+          "market_cap_dominance": 0.0837,
+          "fully_diluted_market_cap": 2349945021.29,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 2416,
+      "name": "Theta Network",
+      "symbol": "THETA",
+      "slug": "theta-network",
+      "infinite_supply": false,
+      "cmc_rank": 52,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:35:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 1.9319927539568342,
+          "volume_24h": 99620888.95528407,
+          "volume_change_24h": -30.8348,
+          "percent_change_1h": -0.23747577,
+          "percent_change_24h": -0.16270979,
+          "percent_change_7d": 58.94942998,
+          "percent_change_30d": 99.87940455,
+          "percent_change_60d": 40.31926457,
+          "percent_change_90d": 80.93453827,
+          "market_cap": 1931992753.9568343,
+          "market_cap_dominance": 0.083,
+          "fully_diluted_market_cap": 1931992753.96,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:35:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 3602,
+      "name": "Bitcoin SV",
+      "symbol": "BSV",
+      "slug": "bitcoin-sv",
+      "infinite_supply": false,
+      "cmc_rank": 54,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 95.75526681026227,
+          "volume_24h": 190538212.7652699,
+          "volume_change_24h": 46.2785,
+          "percent_change_1h": -2.00042978,
+          "percent_change_24h": 14.78566057,
+          "percent_change_7d": 29.32263894,
+          "percent_change_30d": 40.91040029,
+          "percent_change_60d": -7.63565139,
+          "percent_change_90d": 92.02456005,
+          "market_cap": 1881525161.0757215,
+          "market_cap_dominance": 0.0808,
+          "fully_diluted_market_cap": 1881525161.08,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 4030,
+      "name": "Algorand",
+      "symbol": "ALGO",
+      "slug": "algorand",
+      "infinite_supply": false,
+      "cmc_rank": 53,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 0.2338163327959163,
+          "volume_24h": 113694677.01069975,
+          "volume_change_24h": -14.6064,
+          "percent_change_1h": 0.09350207,
+          "percent_change_24h": 6.91308324,
+          "percent_change_7d": 24.55219242,
+          "percent_change_30d": 49.96497199,
+          "percent_change_60d": -2.6810593,
+          "percent_change_90d": 54.79944306,
+          "market_cap": 1882861036.410121,
+          "market_cap_dominance": 0.0808,
+          "fully_diluted_market_cap": 2338163327.96,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 4558,
+      "name": "Flow",
+      "symbol": "FLOW",
+      "slug": "flow",
+      "infinite_supply": true,
+      "cmc_rank": 55,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:35:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 1.1514470926890472,
+          "volume_24h": 122485744.06017777,
+          "volume_change_24h": -27.0471,
+          "percent_change_1h": -1.45223081,
+          "percent_change_24h": 6.77441329,
+          "percent_change_7d": 12.68854639,
+          "percent_change_30d": 63.4269389,
+          "percent_change_60d": 18.94398022,
+          "percent_change_90d": 69.19998477,
+          "market_cap": 1718019292.1865828,
+          "market_cap_dominance": 0.0738,
+          "fully_diluted_market_cap": 1718019292.12,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:35:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 6892,
+      "name": "MultiversX",
+      "symbol": "EGLD",
+      "slug": "multiversx-egld",
+      "infinite_supply": false,
+      "cmc_rank": 56,
+      "self_reported_circulating_supply": 26640857,
+      "self_reported_market_cap": 1716231199.6886451,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 64.42102067845059,
+          "volume_24h": 52897343.71578947,
+          "volume_change_24h": -24.4975,
+          "percent_change_1h": -1.25834867,
+          "percent_change_24h": 4.82707954,
+          "percent_change_7d": 12.89610307,
+          "percent_change_30d": 25.17223384,
+          "percent_change_60d": -9.64668237,
+          "percent_change_90d": 39.64406049,
+          "market_cap": 1716231199.6886451,
+          "market_cap_dominance": 0.0737,
+          "fully_diluted_market_cap": 2023846018.48,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 24478,
+      "name": "Pepe",
+      "symbol": "PEPE",
+      "slug": "pepe",
+      "infinite_supply": false,
+      "cmc_rank": 57,
+      "self_reported_circulating_supply": 420690000000000,
+      "self_reported_market_cap": 1710718647.6054893,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 0.000004066459025899092,
+          "volume_24h": 1965080901.919695,
+          "volume_change_24h": 179.066,
+          "percent_change_1h": -1.00614905,
+          "percent_change_24h": 49.24023931,
+          "percent_change_7d": 240.82902509,
+          "percent_change_30d": 347.95815859,
+          "percent_change_60d": 187.37115609,
+          "percent_change_90d": 237.38539192,
+          "market_cap": 1710718240.9595654,
+          "market_cap_dominance": 0.0735,
+          "fully_diluted_market_cap": 1710718647.61,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 5632,
+      "name": "Arweave",
+      "symbol": "AR",
+      "slug": "arweave",
+      "infinite_supply": false,
+      "cmc_rank": 58,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 26.013589040618914,
+          "volume_24h": 160511323.47971374,
+          "volume_change_24h": -43.4193,
+          "percent_change_1h": -0.40741642,
+          "percent_change_24h": -4.19735292,
+          "percent_change_7d": 101.56243905,
+          "percent_change_30d": 212.35747769,
+          "percent_change_60d": 156.9304774,
+          "percent_change_90d": 214.93466712,
+          "market_cap": 1702698269.5786428,
+          "market_cap_dominance": 0.0731,
+          "fully_diluted_market_cap": 1716896876.68,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 7278,
+      "name": "Aave",
+      "symbol": "AAVE",
+      "slug": "aave",
+      "infinite_supply": false,
+      "cmc_rank": 59,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": 0.16615194,
+      "last_updated": "2024-03-02T05:35:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 113.62277770202138,
+          "volume_24h": 148367167.67489997,
+          "volume_change_24h": -35.5824,
+          "percent_change_1h": -0.17757653,
+          "percent_change_24h": 4.16981872,
+          "percent_change_7d": 15.4820834,
+          "percent_change_30d": 36.50180081,
+          "percent_change_60d": -3.29052948,
+          "percent_change_90d": 9.19314657,
+          "market_cap": 1676119539.554791,
+          "market_cap_dominance": 0.072,
+          "fully_diluted_market_cap": 1817964443.23,
+          "tvl": 10087872517.17285,
+          "last_updated": "2024-03-02T05:35:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 25028,
+      "name": "ORDI",
+      "symbol": "ORDI",
+      "slug": "ordi",
+      "infinite_supply": false,
+      "cmc_rank": 60,
+      "self_reported_circulating_supply": 21000000,
+      "self_reported_market_cap": 1609358937.6869895,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:35:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 76.63613988985665,
+          "volume_24h": 339295117.0662561,
+          "volume_change_24h": -17.5754,
+          "percent_change_1h": -1.23434653,
+          "percent_change_24h": 5.8637562,
+          "percent_change_7d": 31.07649207,
+          "percent_change_30d": 24.63031204,
+          "percent_change_60d": -2.30865802,
+          "percent_change_90d": 138.19794099,
+          "market_cap": 1609358937.6869895,
+          "market_cap_dominance": 0.0691,
+          "fully_diluted_market_cap": 1609358937.69,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:35:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 7950,
+      "name": "Flare",
+      "symbol": "FLR",
+      "slug": "flare",
+      "infinite_supply": false,
+      "cmc_rank": 61,
+      "self_reported_circulating_supply": 34813539261.72344,
+      "self_reported_market_cap": 1598409405.948651,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 0.04591344171967197,
+          "volume_24h": 39024363.05136624,
+          "volume_change_24h": -11.5423,
+          "percent_change_1h": -0.96246413,
+          "percent_change_24h": -2.25681753,
+          "percent_change_7d": 10.50558696,
+          "percent_change_30d": 103.34979694,
+          "percent_change_60d": 146.9427905,
+          "percent_change_90d": 216.39295117,
+          "market_cap": 1598409405.948651,
+          "market_cap_dominance": 0.0686,
+          "fully_diluted_market_cap": 4617045928.86,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 23095,
+      "name": "Bonk",
+      "symbol": "BONK",
+      "slug": "bonk1",
+      "infinite_supply": false,
+      "cmc_rank": 62,
+      "self_reported_circulating_supply": 64971296213932.7,
+      "self_reported_market_cap": 1556630762.4396486,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 0.000023958745679231785,
+          "volume_24h": 734476618.8750378,
+          "volume_change_24h": -18.8135,
+          "percent_change_1h": -1.39771696,
+          "percent_change_24h": 5.989123,
+          "percent_change_7d": 110.06294745,
+          "percent_change_30d": 133.03415083,
+          "percent_change_60d": 63.5421179,
+          "percent_change_90d": 393.72848573,
+          "market_cap": 1561902553.140241,
+          "market_cap_dominance": 0.0671,
+          "fully_diluted_market_cap": 2240769721.84,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 3155,
+      "name": "Quant",
+      "symbol": "QNT",
+      "slug": "quant",
+      "infinite_supply": false,
+      "cmc_rank": 63,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:35:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 124.41107543458394,
+          "volume_24h": 58323790.62581815,
+          "volume_change_24h": 29.0382,
+          "percent_change_1h": 0.2406432,
+          "percent_change_24h": 9.23038715,
+          "percent_change_7d": 20.77507619,
+          "percent_change_30d": 21.69189933,
+          "percent_change_60d": -12.62959348,
+          "percent_change_90d": 23.47886446,
+          "market_cap": 1501982318.019968,
+          "market_cap_dominance": 0.0645,
+          "fully_diluted_market_cap": 1851406499.17,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:35:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 6210,
+      "name": "The Sandbox",
+      "symbol": "SAND",
+      "slug": "the-sandbox",
+      "infinite_supply": false,
+      "cmc_rank": 64,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:35:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 0.6558038315307185,
+          "volume_24h": 367196930.4584158,
+          "volume_change_24h": 6.9511,
+          "percent_change_1h": -2.24344336,
+          "percent_change_24h": 5.10094689,
+          "percent_change_7d": 30.93432858,
+          "percent_change_30d": 51.98439878,
+          "percent_change_60d": 7.64067748,
+          "percent_change_90d": 54.13872197,
+          "market_cap": 1470136386.481993,
+          "market_cap_dominance": 0.0631,
+          "fully_diluted_market_cap": 1967411494.59,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:35:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 5665,
+      "name": "Helium",
+      "symbol": "HNT",
+      "slug": "helium",
+      "infinite_supply": false,
+      "cmc_rank": 65,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 9.0155482932477,
+          "volume_24h": 20120866.25762768,
+          "volume_change_24h": -11.9052,
+          "percent_change_1h": -0.69345733,
+          "percent_change_24h": -3.96268413,
+          "percent_change_7d": 6.75386914,
+          "percent_change_30d": 23.86168057,
+          "percent_change_60d": 31.04810873,
+          "percent_change_90d": 208.25126899,
+          "market_cap": 1450380314.9637563,
+          "market_cap_dominance": 0.0623,
+          "fully_diluted_market_cap": 2010467269.39,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 3513,
+      "name": "Fantom",
+      "symbol": "FTM",
+      "slug": "fantom",
+      "infinite_supply": false,
+      "cmc_rank": 66,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:35:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 0.5136586494218708,
+          "volume_24h": 138097878.8662627,
+          "volume_change_24h": -2.5679,
+          "percent_change_1h": -0.19266897,
+          "percent_change_24h": 7.19372656,
+          "percent_change_7d": 28.66570968,
+          "percent_change_30d": 48.32143913,
+          "percent_change_60d": 1.29999192,
+          "percent_change_90d": 60.20758148,
+          "market_cap": 1440111283.0886984,
+          "market_cap_dominance": 0.0618,
+          "fully_diluted_market_cap": 1630866211.91,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:35:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 4066,
+      "name": "Chiliz",
+      "symbol": "CHZ",
+      "slug": "chiliz",
+      "infinite_supply": false,
+      "cmc_rank": 67,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 0.16168686756638465,
+          "volume_24h": 171029405.97856092,
+          "volume_change_24h": -5.5439,
+          "percent_change_1h": -0.20842281,
+          "percent_change_24h": 0.00596551,
+          "percent_change_7d": 28.99325749,
+          "percent_change_30d": 64.93337083,
+          "percent_change_60d": 77.74412486,
+          "percent_change_90d": 113.07603917,
+          "market_cap": 1437119868.6397648,
+          "market_cap_dominance": 0.0617,
+          "fully_diluted_market_cap": 1437216600.45,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 8646,
+      "name": "Mina",
+      "symbol": "MINA",
+      "slug": "mina",
+      "infinite_supply": true,
+      "cmc_rank": 68,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:35:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 1.3439782910312954,
+          "volume_24h": 82771549.51453538,
+          "volume_change_24h": -8.9661,
+          "percent_change_1h": -1.03129455,
+          "percent_change_24h": 2.69180649,
+          "percent_change_7d": 7.56262103,
+          "percent_change_30d": 19.10249596,
+          "percent_change_60d": -19.25016858,
+          "percent_change_90d": 80.42854325,
+          "market_cap": 1426423733.2382584,
+          "market_cap_dominance": 0.0613,
+          "fully_diluted_market_cap": 1520828971.02,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:35:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 6783,
+      "name": "Axie Infinity",
+      "symbol": "AXS",
+      "slug": "axie-infinity",
+      "infinite_supply": false,
+      "cmc_rank": 69,
+      "self_reported_circulating_supply": 137727608.57577398,
+      "self_reported_market_cap": 1375104405.8623447,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 9.984232065612318,
+          "volume_24h": 144800006.09453538,
+          "volume_change_24h": -0.2747,
+          "percent_change_1h": -1.28112421,
+          "percent_change_24h": 4.54951551,
+          "percent_change_7d": 26.49580818,
+          "percent_change_30d": 45.77165879,
+          "percent_change_60d": 6.04007635,
+          "percent_change_90d": 51.25930849,
+          "market_cap": 1375099784.6142154,
+          "market_cap_dominance": 0.0591,
+          "fully_diluted_market_cap": 2695742657.72,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 2586,
+      "name": "Synthetix",
+      "symbol": "SNX",
+      "slug": "synthetix",
+      "infinite_supply": false,
+      "cmc_rank": 70,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 4.502369382819888,
+          "volume_24h": 82710353.937806,
+          "volume_change_24h": -14.9234,
+          "percent_change_1h": -0.86106,
+          "percent_change_24h": 3.1297495,
+          "percent_change_7d": 16.99692447,
+          "percent_change_30d": 48.03248286,
+          "percent_change_60d": 9.25662909,
+          "percent_change_90d": 20.50869851,
+          "market_cap": 1372867122.198766,
+          "market_cap_dominance": 0.0589,
+          "fully_diluted_market_cap": 1477646583.5,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 3773,
+      "name": "Fetch.ai",
+      "symbol": "FET",
+      "slug": "fetch",
+      "infinite_supply": false,
+      "cmc_rank": 71,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 1.6303168735023361,
+          "volume_24h": 516229357.40618265,
+          "volume_change_24h": 5.3493,
+          "percent_change_1h": -0.36896605,
+          "percent_change_24h": 3.79362151,
+          "percent_change_7d": 59.18769739,
+          "percent_change_30d": 192.20064018,
+          "percent_change_60d": 125.59017682,
+          "percent_change_90d": 193.42127228,
+          "market_cap": 1356175875.2381501,
+          "market_cap_dominance": 0.0582,
+          "fully_diluted_market_cap": 1879751401.63,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 22691,
+      "name": "Starknet",
+      "symbol": "STRK",
+      "slug": "starknet-token",
+      "infinite_supply": false,
+      "cmc_rank": 72,
+      "self_reported_circulating_supply": 728000000,
+      "self_reported_market_cap": 1338466291.9697416,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:35:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 1.8385525988595353,
+          "volume_24h": 224648056.21057022,
+          "volume_change_24h": -26.7293,
+          "percent_change_1h": 0.54247177,
+          "percent_change_24h": 2.68970226,
+          "percent_change_7d": -4.06524651,
+          "percent_change_30d": -21.69089167,
+          "percent_change_60d": -21.69089167,
+          "percent_change_90d": -21.69089167,
+          "market_cap": 1338466291.9697416,
+          "market_cap_dominance": 0.0575,
+          "fully_diluted_market_cap": 18385525988.6,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:35:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 16086,
+      "name": "BitTorrent (New)",
+      "symbol": "BTT",
+      "slug": "bittorrent-new",
+      "infinite_supply": false,
+      "cmc_rank": 73,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 0.0000013750311331929185,
+          "volume_24h": 125456682.02777322,
+          "volume_change_24h": -26.2945,
+          "percent_change_1h": -1.07940754,
+          "percent_change_24h": 7.32805446,
+          "percent_change_7d": 27.55697051,
+          "percent_change_30d": 71.72112971,
+          "percent_change_60d": 15.03735365,
+          "percent_change_90d": 183.52135205,
+          "market_cap": 1331368983.8879783,
+          "market_cap_dominance": 0.0572,
+          "fully_diluted_market_cap": 1361280821.86,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 11092,
+      "name": "Bitget Token",
+      "symbol": "BGB",
+      "slug": "bitget-token-new",
+      "infinite_supply": false,
+      "cmc_rank": 74,
+      "self_reported_circulating_supply": 1400000000,
+      "self_reported_market_cap": 1303058373.8343143,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 0.9307559813102245,
+          "volume_24h": 26587308.9297959,
+          "volume_change_24h": -2.2687,
+          "percent_change_1h": 0.73105481,
+          "percent_change_24h": -2.17558881,
+          "percent_change_7d": -6.39448713,
+          "percent_change_30d": 55.11663523,
+          "percent_change_60d": 56.36314806,
+          "percent_change_90d": 80.51916775,
+          "market_cap": 1303058373.8343143,
+          "market_cap_dominance": 0.0559,
+          "fully_diluted_market_cap": 1861511962.62,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 2563,
+      "name": "TrueUSD",
+      "symbol": "TUSD",
+      "slug": "trueusd",
+      "infinite_supply": false,
+      "cmc_rank": 75,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 1.0007848376095572,
+          "volume_24h": 109671790.57902442,
+          "volume_change_24h": -56.144,
+          "percent_change_1h": -0.02222505,
+          "percent_change_24h": 0.11287111,
+          "percent_change_7d": 2.6883767,
+          "percent_change_30d": 1.45114772,
+          "percent_change_60d": 0.33624169,
+          "percent_change_90d": 0.21500184,
+          "market_cap": 1289466695.318749,
+          "market_cap_dominance": 0.0554,
+          "fully_diluted_market_cap": 1289466695.32,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 18876,
+      "name": "ApeCoin",
+      "symbol": "APE",
+      "slug": "apecoin-ape",
+      "infinite_supply": false,
+      "cmc_rank": 76,
+      "self_reported_circulating_supply": 604895833,
+      "self_reported_market_cap": 1286362672.3464363,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:35:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 2.1265854419374652,
+          "volume_24h": 143385466.8710241,
+          "volume_change_24h": 11.8504,
+          "percent_change_1h": 0.28506655,
+          "percent_change_24h": 8.94477301,
+          "percent_change_7d": 22.44280722,
+          "percent_change_30d": 48.10259825,
+          "percent_change_60d": 23.06105611,
+          "percent_change_90d": 31.86768415,
+          "market_cap": 1286362672.3464363,
+          "market_cap_dominance": 0.0552,
+          "fully_diluted_market_cap": 2126585441.94,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:35:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 2011,
+      "name": "Tezos",
+      "symbol": "XTZ",
+      "slug": "tezos",
+      "infinite_supply": true,
+      "cmc_rank": 77,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 1.3090950651037059,
+          "volume_24h": 52666277.59324448,
+          "volume_change_24h": -27.8621,
+          "percent_change_1h": 0.15693587,
+          "percent_change_24h": 4.87625877,
+          "percent_change_7d": 20.04967588,
+          "percent_change_30d": 37.69190987,
+          "percent_change_60d": 19.75746145,
+          "percent_change_90d": 52.19046172,
+          "market_cap": 1273670078.5598793,
+          "market_cap_dominance": 0.0547,
+          "fully_diluted_market_cap": 1300876042.89,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 28683,
+      "name": "SATS",
+      "symbol": "1000SATS",
+      "slug": "sats",
+      "infinite_supply": false,
+      "cmc_rank": 78,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:35:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 0.0006074626633820748,
+          "volume_24h": 144268501.8402289,
+          "volume_change_24h": 17.1352,
+          "percent_change_1h": -0.10844327,
+          "percent_change_24h": 14.24287617,
+          "percent_change_7d": 34.36589331,
+          "percent_change_30d": 16.48625304,
+          "percent_change_60d": -24.72995273,
+          "percent_change_90d": -2.06444815,
+          "market_cap": 1275671593.102357,
+          "market_cap_dominance": 0.0548,
+          "fully_diluted_market_cap": 1275671593.1,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:35:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 1966,
+      "name": "Decentraland",
+      "symbol": "MANA",
+      "slug": "decentraland",
+      "infinite_supply": false,
+      "cmc_rank": 79,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 0.6531794927447582,
+          "volume_24h": 240043182.33779576,
+          "volume_change_24h": -19.7359,
+          "percent_change_1h": -1.39808981,
+          "percent_change_24h": 0.18463606,
+          "percent_change_7d": 34.02468467,
+          "percent_change_30d": 52.57575003,
+          "percent_change_60d": 19.820969,
+          "percent_change_90d": 44.05824609,
+          "market_cap": 1246475401.6712227,
+          "market_cap_dominance": 0.0535,
+          "fully_diluted_market_cap": 1432539760.52,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 2087,
+      "name": "KuCoin Token",
+      "symbol": "KCS",
+      "slug": "kucoin-token",
+      "infinite_supply": false,
+      "cmc_rank": 80,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:35:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 12.577384912914802,
+          "volume_24h": 3939478.34525999,
+          "volume_change_24h": 21.0373,
+          "percent_change_1h": 0.05029262,
+          "percent_change_24h": 9.99122945,
+          "percent_change_7d": 19.70966411,
+          "percent_change_30d": 34.55098866,
+          "percent_change_60d": 18.80554987,
+          "percent_change_90d": 53.71596632,
+          "market_cap": 1211041909.710361,
+          "market_cap_dominance": 0.052,
+          "fully_diluted_market_cap": 2139647590.99,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:35:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 28752,
+      "name": "dogwifhat",
+      "symbol": "WIF",
+      "slug": "dogwifhat",
+      "infinite_supply": false,
+      "cmc_rank": 81,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:35:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 1.2022254553063196,
+          "volume_24h": 379003351.2957259,
+          "volume_change_24h": 68.9914,
+          "percent_change_1h": -2.84147171,
+          "percent_change_24h": 38.15151663,
+          "percent_change_7d": 299.42812399,
+          "percent_change_30d": 453.01452225,
+          "percent_change_60d": 654.98231857,
+          "percent_change_90d": 615.39263487,
+          "market_cap": 1200927259.6673477,
+          "market_cap_dominance": 0.0516,
+          "fully_diluted_market_cap": 1200927259.67,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:35:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 1765,
+      "name": "EOS",
+      "symbol": "EOS",
+      "slug": "eos",
+      "infinite_supply": true,
+      "cmc_rank": 82,
+      "self_reported_circulating_supply": 1118805540.0314,
+      "self_reported_market_cap": 1139588602.6761203,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 1.0185761170293606,
+          "volume_24h": 254852439.61657757,
+          "volume_change_24h": 9.8,
+          "percent_change_1h": 0.14553292,
+          "percent_change_24h": 16.44725497,
+          "percent_change_7d": 25.49707671,
+          "percent_change_30d": 48.51298989,
+          "percent_change_60d": 14.830129,
+          "percent_change_90d": 46.02521678,
+          "market_cap": 1139585066.6307657,
+          "market_cap_dominance": 0.0489,
+          "fully_diluted_market_cap": 1139585066.63,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 1376,
+      "name": "Neo",
+      "symbol": "NEO",
+      "slug": "neo",
+      "infinite_supply": false,
+      "cmc_rank": 83,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:35:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 15.94137806951199,
+          "volume_24h": 188945599.15697646,
+          "volume_change_24h": 45.1598,
+          "percent_change_1h": -2.10973178,
+          "percent_change_24h": 11.03532573,
+          "percent_change_7d": 26.77089564,
+          "percent_change_30d": 43.18408975,
+          "percent_change_60d": 13.23176107,
+          "percent_change_90d": 29.46942906,
+          "market_cap": 1124486173.5524125,
+          "market_cap_dominance": 0.0483,
+          "fully_diluted_market_cap": 1594137806.95,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:35:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 7080,
+      "name": "Gala",
+      "symbol": "GALA",
+      "slug": "gala",
+      "infinite_supply": false,
+      "cmc_rank": 84,
+      "self_reported_circulating_supply": 34459243546.50156,
+      "self_reported_market_cap": 1391506958.0552256,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 0.0403812392508685,
+          "volume_24h": 173520422.64326918,
+          "volume_change_24h": -35.0012,
+          "percent_change_1h": -0.13260479,
+          "percent_change_24h": -0.40348851,
+          "percent_change_7d": 33.77499237,
+          "percent_change_30d": 89.17822128,
+          "percent_change_60d": 25.61734683,
+          "percent_change_90d": 49.49826932,
+          "market_cap": 1122592844.1753664,
+          "market_cap_dominance": 0.0482,
+          "fully_diluted_market_cap": 1204532845.11,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 13502,
+      "name": "Worldcoin",
+      "symbol": "WLD",
+      "slug": "worldcoin-org",
+      "infinite_supply": false,
+      "cmc_rank": 87,
+      "self_reported_circulating_supply": 142455738.35913563,
+      "self_reported_market_cap": 1097481062.5334404,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:35:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 7.704014420020444,
+          "volume_24h": 680527487.661075,
+          "volume_change_24h": 10.3962,
+          "percent_change_1h": -1.97257097,
+          "percent_change_24h": -6.21388984,
+          "percent_change_7d": -4.04714584,
+          "percent_change_30d": 245.54070558,
+          "percent_change_60d": 105.41839321,
+          "percent_change_90d": 202.65404443,
+          "market_cap": 1097351642.7951984,
+          "market_cap_dominance": 0.0471,
+          "fully_diluted_market_cap": 77040144200.2,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:35:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 2424,
+      "name": "SingularityNET",
+      "symbol": "AGIX",
+      "slug": "singularitynet",
+      "infinite_supply": false,
+      "cmc_rank": 86,
+      "self_reported_circulating_supply": 1000000000,
+      "self_reported_market_cap": 860845417.3552636,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:35:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 0.8608454173552635,
+          "volume_24h": 484079862.19877166,
+          "volume_change_24h": 33.068,
+          "percent_change_1h": -0.99002942,
+          "percent_change_24h": 2.52639655,
+          "percent_change_7d": 20.58524099,
+          "percent_change_30d": 233.78320429,
+          "percent_change_60d": 154.31678216,
+          "percent_change_90d": 171.57235631,
+          "market_cap": 1098943555.4399853,
+          "market_cap_dominance": 0.0472,
+          "fully_diluted_market_cap": 1721690834.71,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:35:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 7431,
+      "name": "Akash Network",
+      "symbol": "AKT",
+      "slug": "akash-network",
+      "infinite_supply": false,
+      "cmc_rank": 85,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:35:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 4.799053467296326,
+          "volume_24h": 7559067.43873558,
+          "volume_change_24h": -17.4361,
+          "percent_change_1h": 0.17234803,
+          "percent_change_24h": -1.43883024,
+          "percent_change_7d": 25.72178146,
+          "percent_change_30d": 77.06174592,
+          "percent_change_60d": 96.15547854,
+          "percent_change_90d": 164.33272774,
+          "market_cap": 1100439344.0805137,
+          "market_cap_dominance": 0.0473,
+          "fully_diluted_market_cap": 1864619473.52,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:35:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 17799,
+      "name": "Axelar",
+      "symbol": "AXL",
+      "slug": "axelar",
+      "infinite_supply": false,
+      "cmc_rank": 88,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:35:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 1.872202292167189,
+          "volume_24h": 315450820.69123876,
+          "volume_change_24h": 2182.1383,
+          "percent_change_1h": -1.50740094,
+          "percent_change_24h": 22.48259562,
+          "percent_change_7d": 30.6716251,
+          "percent_change_30d": 105.49290492,
+          "percent_change_60d": 60.12532638,
+          "percent_change_90d": 155.33844672,
+          "market_cap": 1093788203.685839,
+          "market_cap_dominance": 0.047,
+          "fully_diluted_market_cap": 2128425282.39,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:35:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 28177,
+      "name": "Pyth Network",
+      "symbol": "PYTH",
+      "slug": "pyth-network",
+      "infinite_supply": false,
+      "cmc_rank": 89,
+      "self_reported_circulating_supply": 1500000000,
+      "self_reported_market_cap": 998900366.9759248,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 0.6659335779839499,
+          "volume_24h": 101318226.43707862,
+          "volume_change_24h": -38.4562,
+          "percent_change_1h": -0.12097007,
+          "percent_change_24h": -0.39018659,
+          "percent_change_7d": 23.10913794,
+          "percent_change_30d": 70.48748701,
+          "percent_change_60d": 91.92359794,
+          "percent_change_90d": 47.89303854,
+          "market_cap": 1087182660.3201752,
+          "market_cap_dominance": 0.0467,
+          "fully_diluted_market_cap": 6659328599.42,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 11156,
+      "name": "dYdX (ethDYDX)",
+      "symbol": "ETHDYDX",
+      "slug": "dydx-ethdydx",
+      "infinite_supply": false,
+      "cmc_rank": 90,
+      "self_reported_circulating_supply": 377821714,
+      "self_reported_market_cap": 1373692762.637596,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 3.6358226955626907,
+          "volume_24h": 144265403.13237596,
+          "volume_change_24h": -6.2771,
+          "percent_change_1h": -1.03015847,
+          "percent_change_24h": 8.50191138,
+          "percent_change_7d": 5.65249081,
+          "percent_change_30d": 41.26635276,
+          "percent_change_60d": 17.28754991,
+          "percent_change_90d": 8.43393978,
+          "market_cap": 1074808926.429608,
+          "market_cap_dominance": 0.0461,
+          "fully_diluted_market_cap": 1948960931.24,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 7653,
+      "name": "Oasis Network",
+      "symbol": "ROSE",
+      "slug": "oasis-network",
+      "infinite_supply": false,
+      "cmc_rank": 91,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 0.15907562847174703,
+          "volume_24h": 114602646.56363893,
+          "volume_change_24h": -18.3225,
+          "percent_change_1h": -0.15312735,
+          "percent_change_24h": 5.08754863,
+          "percent_change_7d": 31.66004123,
+          "percent_change_30d": 60.09660943,
+          "percent_change_60d": 15.1076969,
+          "percent_change_90d": 84.65586756,
+          "market_cap": 1067970119.5825429,
+          "market_cap_dominance": 0.0459,
+          "fully_diluted_market_cap": 1590756284.72,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 23121,
+      "name": "Blur",
+      "symbol": "BLUR",
+      "slug": "blur-token",
+      "infinite_supply": false,
+      "cmc_rank": 92,
+      "self_reported_circulating_supply": 82565477.1689498,
+      "self_reported_market_cap": 59582418.14944971,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 0.7216383916431447,
+          "volume_24h": 121997759.90667601,
+          "volume_change_24h": -21.1658,
+          "percent_change_1h": -0.40481177,
+          "percent_change_24h": -1.69666665,
+          "percent_change_7d": 7.70325423,
+          "percent_change_30d": 23.90547578,
+          "percent_change_60d": 38.00733773,
+          "percent_change_90d": 28.13434984,
+          "market_cap": 1043146786.5890838,
+          "market_cap_dominance": 0.0448,
+          "fully_diluted_market_cap": 2164915174.93,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 7334,
+      "name": "Conflux",
+      "symbol": "CFX",
+      "slug": "conflux-network",
+      "infinite_supply": true,
+      "cmc_rank": 93,
+      "self_reported_circulating_supply": 3750763850.31,
+      "self_reported_market_cap": 1033637473.4923674,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:35:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 0.27558052565931,
+          "volume_24h": 41614220.26696281,
+          "volume_change_24h": -45.1529,
+          "percent_change_1h": -0.48584284,
+          "percent_change_24h": 3.81843198,
+          "percent_change_7d": 16.1897434,
+          "percent_change_30d": 31.12234874,
+          "percent_change_60d": 39.98056576,
+          "percent_change_90d": 65.68340666,
+          "market_cap": 1033634711.8200014,
+          "market_cap_dominance": 0.0444,
+          "fully_diluted_market_cap": 1371220858.43,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:35:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 1659,
+      "name": "Gnosis",
+      "symbol": "GNO",
+      "slug": "gnosis-gno",
+      "infinite_supply": false,
+      "cmc_rank": 94,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 399.18016013644166,
+          "volume_24h": 14792338.3522505,
+          "volume_change_24h": -0.4055,
+          "percent_change_1h": -0.36924838,
+          "percent_change_24h": 1.95289362,
+          "percent_change_7d": 27.4782517,
+          "percent_change_30d": 88.00125693,
+          "percent_change_60d": 94.69121523,
+          "percent_change_90d": 93.02960899,
+          "market_cap": 1033712152.5274076,
+          "market_cap_dominance": 0.0444,
+          "fully_diluted_market_cap": 1197540480.41,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 8425,
+      "name": "JasmyCoin",
+      "symbol": "JASMY",
+      "slug": "jasmy",
+      "infinite_supply": false,
+      "cmc_rank": 95,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:35:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 0.020511450077935235,
+          "volume_24h": 413035341.2235823,
+          "volume_change_24h": -20.7121,
+          "percent_change_1h": 0.47081368,
+          "percent_change_24h": -3.63981784,
+          "percent_change_7d": 61.61632416,
+          "percent_change_30d": 321.75752931,
+          "percent_change_60d": 196.77054702,
+          "percent_change_90d": 283.27594501,
+          "market_cap": 1011214482.220487,
+          "market_cap_dominance": 0.0434,
+          "fully_diluted_market_cap": 1025572503.9,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:35:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 1720,
+      "name": "IOTA",
+      "symbol": "IOTA",
+      "slug": "iota",
+      "infinite_supply": false,
+      "cmc_rank": 96,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 0.3147551042567782,
+          "volume_24h": 46525490.97039037,
+          "volume_change_24h": -19.7849,
+          "percent_change_1h": -1.43589794,
+          "percent_change_24h": 6.3935934,
+          "percent_change_7d": 17.25525538,
+          "percent_change_30d": 32.39380074,
+          "percent_change_60d": 1.60308489,
+          "percent_change_90d": -1.68138668,
+          "market_cap": 992408505.0528473,
+          "market_cap_dominance": 0.0426,
+          "fully_diluted_market_cap": 992408505.05,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 4846,
+      "name": "Kava",
+      "symbol": "KAVA",
+      "slug": "kava",
+      "infinite_supply": true,
+      "cmc_rank": 97,
+      "self_reported_circulating_supply": 1082860683,
+      "self_reported_market_cap": 987128015.5325885,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:34:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 0.9115928124731706,
+          "volume_24h": 43082252.61452775,
+          "volume_change_24h": -26.8107,
+          "percent_change_1h": -0.27524988,
+          "percent_change_24h": 5.29648926,
+          "percent_change_7d": 14.53838717,
+          "percent_change_30d": 31.80151724,
+          "percent_change_60d": -3.15050187,
+          "percent_change_90d": 14.27055598,
+          "market_cap": 987128015.5325885,
+          "market_cap_dominance": 0.0424,
+          "fully_diluted_market_cap": 987128014.62,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:34:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 4256,
+      "name": "Klaytn",
+      "symbol": "KLAY",
+      "slug": "klaytn",
+      "infinite_supply": true,
+      "cmc_rank": 98,
+      "self_reported_circulating_supply": null,
+      "self_reported_market_cap": null,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:35:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 0.27970598011681586,
+          "volume_24h": 40478307.66453239,
+          "volume_change_24h": -12.9934,
+          "percent_change_1h": -0.77065332,
+          "percent_change_24h": 10.37845711,
+          "percent_change_7d": 24.72763861,
+          "percent_change_30d": 47.8966138,
+          "percent_change_60d": 1.28161308,
+          "percent_change_90d": 42.50647884,
+          "market_cap": 977520311.2479529,
+          "market_cap_dominance": 0.042,
+          "fully_diluted_market_cap": 1652118881.46,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:35:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 4172,
+      "name": "Terra Classic",
+      "symbol": "LUNC",
+      "slug": "terra-luna",
+      "infinite_supply": true,
+      "cmc_rank": 99,
+      "self_reported_circulating_supply": 5779537885336.244,
+      "self_reported_market_cap": 962956267.827495,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:35:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 0.00016661475137496598,
+          "volume_24h": 180366216.68632266,
+          "volume_change_24h": 0.0789,
+          "percent_change_1h": 2.65988784,
+          "percent_change_24h": 17.65402073,
+          "percent_change_7d": 36.21066084,
+          "percent_change_30d": 80.32293702,
+          "percent_change_60d": 14.7036973,
+          "percent_change_90d": 9.1601842,
+          "market_cap": 962911889.0537813,
+          "market_cap_dominance": 0.0413,
+          "fully_diluted_market_cap": 1133859712.6,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:35:00.000Z"
+        }
+      }
+    },
+    {
+      "id": 7501,
+      "name": "WOO",
+      "symbol": "WOO",
+      "slug": "wootrade",
+      "infinite_supply": false,
+      "cmc_rank": 100,
+      "self_reported_circulating_supply": 1834677115.6746109,
+      "self_reported_market_cap": 960014131.1510891,
+      "tvl_ratio": null,
+      "last_updated": "2024-03-02T05:35:00.000Z",
+      "quote": {
+        "USD": {
+          "price": 0.5232605361178726,
+          "volume_24h": 34060771.14633913,
+          "volume_change_24h": -43.654,
+          "percent_change_1h": -1.13069735,
+          "percent_change_24h": 0.07111286,
+          "percent_change_7d": 15.69418105,
+          "percent_change_30d": 55.89546069,
+          "percent_change_60d": 18.2439171,
+          "percent_change_90d": 125.13070427,
+          "market_cap": 960014131.1510891,
+          "market_cap_dominance": 0.0412,
+          "fully_diluted_market_cap": 1167098439.58,
+          "tvl": null,
+          "last_updated": "2024-03-02T05:35:00.000Z"
+        }
+      }
+    }
+  ]
+}

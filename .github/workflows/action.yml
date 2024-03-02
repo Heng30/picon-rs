@@ -1,0 +1,47 @@
+name: GitHub Actions
+on: [push]
+jobs:
+  action-run:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
+      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
+      - run: echo "The ${{ github.workspace }} is now ready to test your code on the runner."
+      - run: ls ${{ github.workspace }}
+
+      - run: sudo apt update
+      - run: sudo apt install curl cargo
+      - run: curl https://sh.rustup.rs -sSfy | sh
+
+      - run: echo "start install Rust..."
+      - name: Install Rust
+        uses: actions-rs/toolchain@v1
+      - run: echo "end install Rust..."
+
+      # - run: echo "start install Cargo..."
+      # - name: Install Cargo
+      #   uses: actions-rs/cargo@v1
+      # - run: echo "end install Cargo..."
+
+      - run: rustup target add aarch64-linux-android
+      - run: cargo install cargo-ndk
+
+      - name: Set up our JDK environment
+        uses: actions/setup-java@v2
+        with:
+          java-version: "17"
+          distribution: "adopt"
+          cache: "gradle"
+
+      - name: Validate Gradle wrapper
+        uses: gradle/wrapper-validation-action@v1
+
+      - run: echo "start build..."
+      - run: make
+      - run: echo "end build..."
+      - run: echo "🍏 This job's status is ${{ job.status }}."
+
