@@ -3,7 +3,7 @@
 [中文文档](./README.zh-CN.md)
 
 #### Introduction
-It is a simple Android App for displaying crypto price information. Based on `Rust` and `egui`. Use [coinmarketcap](https://coinmarketcap.com/) provided `API` to fetch `Latest` and `Trending` data.
+It is a simple Android App for displaying cryptocurrency price information. Based on `Rust` and `egui`. Use [coinmarketcap](https://coinmarketcap.com/) provided `API` to fetch data.
 
 #### Features
 - [x] show top 100 cryptocurrency information.
