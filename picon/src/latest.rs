@@ -221,7 +221,7 @@ fn list_header(app: &mut App, ui: &mut Ui) {
             .horizontal(|mut strip| {
                 strip.cell(|ui| {
                     let items = vec![
-                        (SortKey::Marker, tr(is_cn, "关注")),
+                        (SortKey::Marker, "...".to_string()),
                         (SortKey::Rank, tr(is_cn, "排名")),
                     ];
                     ui.columns(items.len(), |columns| {
@@ -230,7 +230,7 @@ fn list_header(app: &mut App, ui: &mut Ui) {
                                 let btn = Button::new(
                                     RichText::new(v.1)
                                         .color(text_color)
-                                        .font(FontId::proportional(theme::DEFAULT_FONT_SIZE + 1.)),
+                                        .font(FontId::proportional(theme::DEFAULT_FONT_SIZE)),
                                 )
                                 .frame(false);
 
@@ -278,7 +278,7 @@ fn list_header(app: &mut App, ui: &mut Ui) {
                                 let btn = Button::new(
                                     RichText::new(v.1)
                                         .color(text_color)
-                                        .font(FontId::proportional(theme::DEFAULT_FONT_SIZE + 1.)),
+                                        .font(FontId::proportional(theme::DEFAULT_FONT_SIZE)),
                                 )
                                 .frame(false);
 
@@ -365,8 +365,8 @@ fn list_item(app: &mut App, ui: &mut Ui, row: usize) {
                             data.symbol.clone()
                         },
                         util::pretty_price(data.quote.usd.price),
-                        format!("{:.2}%", data.quote.usd.percent_change_24h),
-                        format!("{:.2}%", data.quote.usd.percent_change_7d),
+                        util::pretty_precent(data.quote.usd.percent_change_24h),
+                        util::pretty_precent(data.quote.usd.percent_change_7d),
                     ];
                     ui.columns(items.len(), |columns| {
                         for (i, v) in items.into_iter().enumerate() {

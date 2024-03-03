@@ -43,7 +43,7 @@ pub fn tr(is_cn: bool, text: &str) -> String {
     items.insert("文件名为空", "File name is empty");
     items.insert("非法文件", "Invalid file");
     items.insert("行情", "Latest");
-    items.insert("热门", "Trinding");
+    items.insert("热门", "Trending");
     items.insert("原文链接", "Source Link");
     items.insert("刷新", "Refresh");
     items.insert("正在刷新", "Refreshing");
@@ -52,6 +52,9 @@ pub fn tr(is_cn: bool, text: &str) -> String {
     items.insert("正忙", "Busy");
     items.insert("空闲", "Idle");
     items.insert("中文", "En");
+    items.insert("排名", "Rank");
+    items.insert("代币", "Symbol");
+    items.insert("价格", "Price");
 
     items.get(text).unwrap_or(&text).to_string()
 }

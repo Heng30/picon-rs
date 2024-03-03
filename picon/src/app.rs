@@ -200,8 +200,7 @@ impl App {
         ));
 
         latest::init(self);
-
-        // self.fetch_latest();
+        self.fetch_latest();
     }
 
     // only call this function when switching to secondary layer, such as `about` panel
@@ -231,23 +230,13 @@ impl App {
     fn header(&mut self, ui: &mut Ui) {
         ui.horizontal(|ui| {
             ui.with_layout(Layout::left_to_right(Align::Center), |ui| {
-                ui.image(
-                    &match self.current_panel {
-                        CurrentPanel::Trending => self.trending_icon.clone().unwrap(),
-                        _ => self.latest_icon.clone().unwrap(),
-                    },
-                    match self.current_panel {
-                        CurrentPanel::Trending => theme::ICON_SIZE * 0.8,
-                        _ => theme::ICON_SIZE,
-                    },
-                );
                 ui.heading(
                     RichText::new(tr(
                         self.conf.ui.is_cn,
                         match self.current_panel {
                             CurrentPanel::Latest => "行情",
                             CurrentPanel::Trending => "热门",
-                            _ => "行情",
+                            _ => "",
                         },
                     ))
                     .color(theme::BRAND_COLOR),

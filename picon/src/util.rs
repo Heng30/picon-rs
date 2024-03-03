@@ -36,3 +36,10 @@ pub fn short_time(s: i64) -> String {
         _ => format!("{s}s"),
     }
 }
+
+pub fn pretty_precent(p: f64) -> String {
+    match p {
+        p if p >= 100. => format!("{:.0}%", p),
+        _ => format!("{:.2}%", p),
+    }
+}

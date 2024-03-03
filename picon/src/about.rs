@@ -30,9 +30,9 @@ pub fn ui(app: &mut App, ui: &mut Ui) {
         ui.add_space(theme::SPACING);
 
         if app.conf.ui.is_cn {
-            ui.label("基于egui。版权2022-2030 Heng30公司有限公司，保留所有权利。该程序按原样提供，不提供任何形式的保证，包括设计，适销性和特定用途的保证。");
+            ui.label("基于egui。版权2022-2030 Heng30保留所有权利。该程序按原样提供，不提供任何形式的保证，包括设计，适销性和特定用途的保证。");
         } else {
-            ui.label("Based on egui. Copyright 2022-2030 The Heng30 Company Ltd. All rights reserved. The program is provided AS IS with NO WARRANTY OF ANY KIND, INCLUDING THE WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.");
+            ui.label("Based on egui. Copyright 2022-2030. All rights reserved by Heng30. The program is provided AS IS with NO WARRANTY OF ANY KIND, INCLUDING THE WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.");
         }
 
         ui.add_space(theme::SPACING * 2.);

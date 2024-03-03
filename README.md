@@ -1,14 +1,20 @@
 <img src="./screenshot/picon-en.png" width="100"/>
-<!-- ![screenshot](./screenshot/picon-en.png) -->
 
 [中文文档](./README.zh-CN.md)
 
 #### Introduction
-It is a simple Android App for displaying crypto news. Based on `Rust` and `egui`.
+It is a simple Android App for displaying crypto price information. Based on `Rust` and `egui`. Use [coinmarketcap](https://coinmarketcap.com/) provided `API` to fetch `Latest` and `Trending` data.
 
 #### Features
-- [x] use [odaily.news](https://www.odaily.news/) provided `API` to fetch Chinese news
-- [x] use [cryptocompare](https://min-api.cryptocompare.com/data/v2/news/?lang=EN) provided `API` to fetch English news
+- [x] show top 100 cryptocurrency information.
+- [ ] show top 100 trending cryptocurrency price and sorted by CoinMarketCap search volume.
+
+#### Use your own coinmarketcap API key
+- edit `./picon/src/apikey.rs`
+    ```
+    pub const CMC_PRO_API_KEY: &str = "Your-API-Key";
+    ```
+- rebuild: `make`
 
 #### How to build?
 - Install Android `sdk`, `ndk`, `jdk17`, and set environment variables

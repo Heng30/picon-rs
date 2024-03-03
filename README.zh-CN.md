@@ -1,14 +1,20 @@
 <img src="./screenshot/picon-cn.png" width="100"/>
-<!-- ![screenshot](./screenshot/picon-cn.png) -->
 
 [English Documentation](./README.md)
 
 #### 简介
-一个简单的安卓加密新闻软件。基于`Rust`和`egui`实现。
+一个简单的安卓加密行情软件。基于`Rust`和`egui`实现。使用 [coinmarketcap](https://coinmarketcap.com/) 提供的API获取数据。
 
 #### 功能
-- [x] 使用[odaily.news](https://www.odaily.news/) 提供的`API`获取中文新闻
-- [x] 使用[cryptocompare](https://min-api.cryptocompare.com/data/v2/news/?lang=EN) 提供的`API`获取英文新闻
+- [x] 显示市值前100加密货币行情
+- [ ] 热门代币行情
+
+#### 如何使用coinmarketcap API-Key?
+- 编辑 `./picon/src/apikey.rs`
+    ```
+    pub const CMC_PRO_API_KEY: &str = "Your-API-Key";
+    ```
+- 重新工具: `make`
 
 #### 如何构建?
 - 安装 Android `sdk`, `ndk` 和 `jdk17`，并配置相应的环境变量

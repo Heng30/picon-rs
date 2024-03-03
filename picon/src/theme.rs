@@ -2,12 +2,9 @@ use egui::{
     Color32, ColorImage, Context, FontData, FontDefinitions, FontFamily, Style, Vec2, Visuals,
 };
 
-#[allow(unused)]
 pub const PADDING: f32 = 4.;
-
 pub const SPACING: f32 = 4.;
 pub const ICON_SIZE: Vec2 = Vec2::new(24.0, 24.0);
-pub const SMALL_ICON_SIZE: Vec2 = Vec2::new(20.0, 20.0);
 pub const BACK_ICON_SIZE: Vec2 = Vec2::new(16.0, 16.0);
 
 pub const DEFAULT_FONT_SIZE: f32 = 14.0;
