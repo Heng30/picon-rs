@@ -20,6 +20,7 @@ use crate::winit::platform::android::activity::AndroidApp;
 mod about;
 mod app;
 mod latest;
+mod trending;
 mod theme;
 mod tr;
 mod util;

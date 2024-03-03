@@ -30,6 +30,8 @@ pub const BACK_ICON: &[u8] = include_bytes!("./res/image/back-simple.png");
 pub const ABOUT_ICON: &[u8] = include_bytes!("./res/image/about.png");
 pub const CIRCLE_GRAY_ICON: &[u8] = include_bytes!("./res/image/circle-gray.png");
 pub const CIRCLE_RED_ICON: &[u8] = include_bytes!("./res/image/circle-red.png");
+pub const LATEST_ICON: &[u8] = include_bytes!("./res/image/latest.png");
+pub const TRENDING_ICON: &[u8] = include_bytes!("./res/image/trending.png");
 
 pub fn init(ctx: &Context) {
     set_font(ctx);

@@ -4,7 +4,7 @@ use super::{
     latest::{self, Latest},
     theme,
     tr::tr,
-    util,
+    trending, util,
 };
 use egui::{
     containers::Frame, Align, Button, Color32, Context, ImageButton, Layout, Pos2, RichText,
@@ -33,7 +33,7 @@ impl Default for MsgType {
 #[derive(Copy, Clone, Debug, PartialEq, PartialOrd)]
 pub enum CurrentPanel {
     Latest,
-    // Trending,
+    Trending,
     About,
 }
 
@@ -64,7 +64,9 @@ enum ChannelItem {
 
 #[derive(Clone)]
 pub struct App {
-    pub is_scroll_to_top: bool,
+    pub is_scroll_to_top_latest: bool,
+    pub is_scroll_to_top_trending: bool,
+
     pub is_fetching_latest: bool,
     pub is_fetching_trending: bool,
 
@@ -92,6 +94,8 @@ pub struct App {
     pub back_icon: Option<TextureHandle>,
     pub circle_gray_icon: Option<TextureHandle>,
     pub circle_red_icon: Option<TextureHandle>,
+    pub latest_icon: Option<TextureHandle>,
+    pub trending_icon: Option<TextureHandle>,
 }
 
 impl Default for App {
@@ -99,7 +103,9 @@ impl Default for App {
         let (tx, rx) = mpsc::sync_channel(10);
 
         Self {
-            is_scroll_to_top: Default::default(),
+            is_scroll_to_top_latest: Default::default(),
+            is_scroll_to_top_trending: Default::default(),
+
             is_fetching_latest: Default::default(),
             is_fetching_trending: Default::default(),
 
@@ -127,6 +133,8 @@ impl Default for App {
             back_icon: Default::default(),
             circle_gray_icon: Default::default(),
             circle_red_icon: Default::default(),
+            latest_icon: Default::default(),
+            trending_icon: Default::default(),
         }
     }
 }
@@ -179,6 +187,18 @@ impl App {
             Default::default(),
         ));
 
+        self.latest_icon = Some(ctx.load_texture(
+            "latest-icon",
+            theme::load_image_from_memory(theme::LATEST_ICON),
+            Default::default(),
+        ));
+
+        self.trending_icon = Some(ctx.load_texture(
+            "trending-icon",
+            theme::load_image_from_memory(theme::TRENDING_ICON),
+            Default::default(),
+        ));
+
         latest::init(self);
 
         // self.fetch_latest();
@@ -198,6 +218,7 @@ impl App {
 
             match self.current_panel {
                 CurrentPanel::Latest => latest::ui(self, ui),
+                CurrentPanel::Trending => trending::ui(self, ui),
                 CurrentPanel::About => about::ui(self, ui),
             }
 
@@ -208,17 +229,24 @@ impl App {
     }
 
     fn header(&mut self, ui: &mut Ui) {
-        // let res = std::fs::metadata("/data/data/xyz.heng30.picon/data/cache/news-en.json");
-        // ui.label(format!("{:?}", res));
-
         ui.horizontal(|ui| {
             ui.with_layout(Layout::left_to_right(Align::Center), |ui| {
-                ui.image(&self.brand_icon.clone().unwrap(), theme::ICON_SIZE);
+                ui.image(
+                    &match self.current_panel {
+                        CurrentPanel::Trending => self.trending_icon.clone().unwrap(),
+                        _ => self.latest_icon.clone().unwrap(),
+                    },
+                    match self.current_panel {
+                        CurrentPanel::Trending => theme::ICON_SIZE * 0.8,
+                        _ => theme::ICON_SIZE,
+                    },
+                );
                 ui.heading(
                     RichText::new(tr(
                         self.conf.ui.is_cn,
                         match self.current_panel {
                             CurrentPanel::Latest => "行情",
+                            CurrentPanel::Trending => "热门",
                             _ => "行情",
                         },
                     ))
@@ -233,7 +261,11 @@ impl App {
                     Frame::none().show(ui, |ui| {
                         let btn = Button::new("").frame(false);
                         if ui.add(btn).double_clicked() {
-                            self.is_scroll_to_top = true;
+                            match self.current_panel {
+                                CurrentPanel::Latest => self.is_scroll_to_top_latest = true,
+                                CurrentPanel::Trending => self.is_scroll_to_top_trending = true,
+                                _ => (),
+                            }
                         }
                     });
                 },
@@ -246,13 +278,36 @@ impl App {
                     .add(
                         ImageButton::new(
                             self.about_icon.clone().unwrap().id(),
-                            theme::SMALL_ICON_SIZE,
+                            theme::ICON_SIZE * 0.9,
                         )
                         .frame(false),
                     )
                     .clicked()
                 {
                     self.switch_panel(CurrentPanel::About);
+                }
+
+                if ui
+                    .add(
+                        ImageButton::new(
+                            self.trending_icon.clone().unwrap().id(),
+                            theme::ICON_SIZE * 0.8,
+                        )
+                        .frame(false),
+                    )
+                    .clicked()
+                {
+                    self.current_panel = CurrentPanel::Trending;
+                }
+
+                if ui
+                    .add(
+                        ImageButton::new(self.latest_icon.clone().unwrap().id(), theme::ICON_SIZE)
+                            .frame(false),
+                    )
+                    .clicked()
+                {
+                    self.current_panel = CurrentPanel::Latest;
                 }
 
                 if ui
@@ -323,6 +378,8 @@ impl App {
                         } else {
                             if !item.data.is_empty() {
                                 self.latest = item;
+                                latest::update_addition_info(self);
+                                latest::sort_by_key(self, self.latest_setting.sort_key, false);
                             }
                         }
                         self.is_fetching_latest = false;

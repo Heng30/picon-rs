@@ -1,5 +1,9 @@
 use super::util;
-use super::{app::App, theme, tr::tr};
+use super::{
+    app::{App, CurrentPanel},
+    theme,
+    tr::tr,
+};
 use anyhow::{anyhow, Result};
 use egui::{
     containers::scroll_area::ScrollBarVisibility, Button, FontId, ImageButton, RichText,
@@ -12,7 +16,7 @@ use std::{collections::HashSet, fs, path::Path};
 const LEFT_HEADER_WIDTH: f32 = 80.;
 
 #[derive(Copy, Clone, Debug, PartialEq, PartialOrd)]
-enum SortKey {
+pub enum SortKey {
     Marker,
     Rank,
     Symbol,
@@ -23,21 +27,25 @@ enum SortKey {
 
 impl Default for SortKey {
     fn default() -> Self {
-        SortKey::Marker
+        SortKey::Rank
     }
 }
 
 #[derive(Default, Debug, Clone)]
 pub struct Setting {
-    sort_key: SortKey,
+    pub sort_key: SortKey,
     marker_symbols: HashSet<String>,
 }
 
 #[derive(Serialize, Deserialize, Clone, Debug, Default)]
 pub struct Latest {
     pub status: LatestStatus,
+
     #[serde(default)]
     pub data: Vec<LatestDataItem>,
+
+    #[serde(skip)]
+    pub addition_info: AdditionInfo,
 }
 
 #[derive(Serialize, Deserialize, Default, Debug, Clone)]
@@ -50,6 +58,10 @@ pub struct LatestStatus {
 pub struct LatestDataItem {
     pub id: u64,
     pub symbol: String,
+
+    #[serde(rename(deserialize = "cmc_rank"), rename(serialize = "cmc_rank"))]
+    pub rank: u32,
+
     pub quote: LatestDataItemQuote,
 }
 
@@ -64,6 +76,13 @@ pub struct LatestDataItemQuoteUSD {
     pub price: f64,
     pub percent_change_24h: f64,
     pub percent_change_7d: f64,
+}
+
+#[derive(Default, Debug, Clone)]
+pub struct AdditionInfo {
+    pub h24_up_count: usize,
+    pub d7_up_count: usize,
+    pub timestamp: i64,
 }
 
 // curl -H "X-CMC_PRO_API_KEY: $API_KEY" -H "Accept: application/json" -d "start=1&limit=100&convert=USD&aux=cmc_rank" -G https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest
@@ -98,6 +117,9 @@ pub fn init(app: &mut App) {
     if let Err(e) = load_marker_symbols(app) {
         log::debug!("{e:?}");
     }
+
+    update_addition_info(app);
+    sort_by_key(app, SortKey::Marker, false);
 }
 
 fn load_marker_symbols(app: &mut App) -> Result<()> {
@@ -132,6 +154,53 @@ fn headers(api_key: &str) -> HeaderMap {
     headers
 }
 
+pub fn sort_by_key(app: &mut App, key: SortKey, is_reverse: bool) {
+    if is_reverse && app.latest_setting.sort_key == key {
+        app.latest.data.reverse();
+        return;
+    }
+
+    app.latest_setting.sort_key = key;
+
+    match app.latest_setting.sort_key {
+        SortKey::Rank => app.latest.data.sort_by(|a, b| a.rank.cmp(&b.rank)),
+        SortKey::Symbol => app
+            .latest
+            .data
+            .sort_by(|a, b| a.symbol.to_uppercase().cmp(&b.symbol.to_uppercase())),
+        SortKey::Price => app.latest.data.sort_by(|a, b| {
+            a.quote
+                .usd
+                .price
+                .partial_cmp(&b.quote.usd.price)
+                .unwrap_or(std::cmp::Ordering::Less)
+        }),
+        SortKey::H24 => app.latest.data.sort_by(|a, b| {
+            a.quote
+                .usd
+                .percent_change_24h
+                .partial_cmp(&b.quote.usd.percent_change_24h)
+                .unwrap_or(std::cmp::Ordering::Less)
+        }),
+        SortKey::D7 => app.latest.data.sort_by(|a, b| {
+            a.quote
+                .usd
+                .percent_change_7d
+                .partial_cmp(&b.quote.usd.percent_change_7d)
+                .unwrap_or(std::cmp::Ordering::Less)
+        }),
+        _ => {
+            app.latest.data.sort_by(|a, b| a.rank.cmp(&b.rank));
+
+            app.latest.data.sort_by(|a, b| {
+                let am = app.latest_setting.marker_symbols.contains(&a.symbol);
+                let bm = app.latest_setting.marker_symbols.contains(&b.symbol);
+                bm.cmp(&am)
+            });
+        }
+    }
+}
+
 pub fn ui(app: &mut App, ui: &mut Ui) {
     list_header(app, ui);
     list_body(app, ui);
@@ -139,6 +208,11 @@ pub fn ui(app: &mut App, ui: &mut Ui) {
 
 fn list_header(app: &mut App, ui: &mut Ui) {
     let is_cn = app.conf.ui.is_cn;
+    let text_color = if app.latest.addition_info.h24_up_count >= 50 {
+        theme::UP_COLOR
+    } else {
+        theme::DOWN_COLOR
+    };
 
     ui.horizontal(|ui| {
         StripBuilder::new(ui)
@@ -155,12 +229,13 @@ fn list_header(app: &mut App, ui: &mut Ui) {
                             columns[i].horizontal(|ui| {
                                 let btn = Button::new(
                                     RichText::new(v.1)
+                                        .color(text_color)
                                         .font(FontId::proportional(theme::DEFAULT_FONT_SIZE + 1.)),
                                 )
                                 .frame(false);
 
                                 if ui.add(btn).clicked() {
-                                    app.latest_setting.sort_key = v.0;
+                                    sort_by_key(app, v.0, true);
                                 }
                             });
                         }
@@ -170,21 +245,45 @@ fn list_header(app: &mut App, ui: &mut Ui) {
                 strip.cell(|ui| {
                     let items = vec![
                         (SortKey::Symbol, tr(is_cn, "代币")),
-                        (SortKey::Price, tr(is_cn, "价格")),
-                        (SortKey::H24, tr(is_cn, "24h")),
-                        (SortKey::D7, tr(is_cn, "7d")),
+                        (
+                            SortKey::Price,
+                            format!(
+                                "{}({})",
+                                tr(is_cn, "价格"),
+                                util::short_time(util::timelapse(
+                                    app.latest.addition_info.timestamp
+                                ))
+                            ),
+                        ),
+                        (
+                            SortKey::H24,
+                            format!(
+                                "{}({}%)",
+                                tr(is_cn, "24h"),
+                                app.latest.addition_info.h24_up_count
+                            ),
+                        ),
+                        (
+                            SortKey::D7,
+                            format!(
+                                "{}({}%)",
+                                tr(is_cn, "7d"),
+                                app.latest.addition_info.d7_up_count
+                            ),
+                        ),
                     ];
                     ui.columns(items.len(), |columns| {
                         for (i, v) in items.into_iter().enumerate() {
                             columns[i].horizontal(|ui| {
                                 let btn = Button::new(
                                     RichText::new(v.1)
+                                        .color(text_color)
                                         .font(FontId::proportional(theme::DEFAULT_FONT_SIZE + 1.)),
                                 )
                                 .frame(false);
 
                                 if ui.add(btn).clicked() {
-                                    app.latest_setting.sort_key = v.0;
+                                    sort_by_key(app, v.0, true);
                                 }
                             });
                         }
@@ -207,9 +306,9 @@ fn list_body(app: &mut App, ui: &mut Ui) {
         .auto_shrink([false, false])
         .scroll_bar_visibility(ScrollBarVisibility::AlwaysVisible);
 
-    if app.is_scroll_to_top {
+    if app.is_scroll_to_top_latest {
         sarea = sarea.vertical_scroll_offset(0.0);
-        app.is_scroll_to_top = false;
+        app.is_scroll_to_top_latest = false;
     }
 
     sarea.show_rows(ui, row_height, num_rows, |ui, row_range| {
@@ -251,7 +350,7 @@ fn list_item(app: &mut App, ui: &mut Ui, row: usize) {
                         };
 
                         columns[1].label(
-                            RichText::new(&format!("{}", row + 1))
+                            RichText::new(&format!("{}", data.rank))
                                 .color(text_color)
                                 .font(FontId::proportional(theme::DEFAULT_FONT_SIZE)),
                         );
@@ -307,4 +406,22 @@ fn update_marker_symbols(app: &mut App, symbol: &str) {
         }
         Err(e) => log::warn!("{e:?}"),
     }
+}
+
+pub fn update_addition_info(app: &mut App) {
+    app.latest.addition_info.h24_up_count = app
+        .latest
+        .data
+        .iter()
+        .filter(|&v| v.quote.usd.percent_change_24h >= 0.)
+        .count();
+
+    app.latest.addition_info.d7_up_count = app
+        .latest
+        .data
+        .iter()
+        .filter(|&v| v.quote.usd.percent_change_7d >= 0.)
+        .count();
+
+    app.latest.addition_info.timestamp = util::timestamp();
 }
