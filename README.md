@@ -7,6 +7,7 @@ It is a simple Android App for displaying cryptocurrency price information. Base
 
 #### Features
 - [x] show top 100 cryptocurrency information.
+- [x] show economy statistic data
 - [ ] show top 100 trending cryptocurrency price and sorted by CoinMarketCap search volume.
 
 #### Use your own coinmarketcap API key

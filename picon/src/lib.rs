@@ -21,6 +21,7 @@ mod about;
 mod app;
 mod latest;
 mod trending;
+mod stats;
 mod theme;
 mod tr;
 mod util;
@@ -110,7 +111,7 @@ fn _main(event_loop: EventLoop<Event>) {
         false,
     );
     let mut window: Option<winit::window::Window> = None;
-    let mut egui_windows = App::default();
+    let mut egui_windows = App::new();
     egui_windows.init(&ctx);
 
     event_loop.run(move |event, event_loop, control_flow| match event {

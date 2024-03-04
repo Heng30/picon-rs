@@ -2,6 +2,7 @@ use super::{
     about, apikey,
     config::Config,
     latest::{self, Latest},
+    stats::{self, Stats},
     theme,
     tr::tr,
     trending, util,
@@ -34,6 +35,7 @@ impl Default for MsgType {
 pub enum CurrentPanel {
     Latest,
     Trending,
+    Stats,
     About,
 }
 
@@ -54,6 +56,7 @@ struct MsgSpec {
 enum ChannelInnerItem {
     Latest(Latest),
     Trending(()),
+    Stats(Stats),
 }
 
 #[derive(Clone, Debug)]
@@ -62,16 +65,19 @@ enum ChannelItem {
     Item(ChannelInnerItem),
 }
 
-#[derive(Clone)]
+#[derive(Clone, Default)]
 pub struct App {
     pub is_scroll_to_top_latest: bool,
     pub is_scroll_to_top_trending: bool,
+    pub is_scroll_to_top_stats: bool,
 
     pub is_fetching_latest: bool,
     pub is_fetching_trending: bool,
+    pub is_fetching_stats: bool,
 
     pub latest: Latest,
     pub trending: (),
+    pub stats: Stats,
 
     pub current_panel: CurrentPanel,
     pub prev_panel: CurrentPanel,
@@ -82,8 +88,8 @@ pub struct App {
     pub latest_setting: latest::Setting,
     msg_spec: MsgSpec,
 
-    tx: Arc<SyncSender<ChannelItem>>,
-    rx: Rc<RefCell<Receiver<ChannelItem>>>,
+    tx: Option<Arc<SyncSender<ChannelItem>>>,
+    rx: Option<Rc<RefCell<Receiver<ChannelItem>>>>,
 
     pub cmc_pro_api_key: String,
 
@@ -96,50 +102,19 @@ pub struct App {
     pub circle_red_icon: Option<TextureHandle>,
     pub latest_icon: Option<TextureHandle>,
     pub trending_icon: Option<TextureHandle>,
-}
-
-impl Default for App {
-    fn default() -> Self {
-        let (tx, rx) = mpsc::sync_channel(10);
-
-        Self {
-            is_scroll_to_top_latest: Default::default(),
-            is_scroll_to_top_trending: Default::default(),
-
-            is_fetching_latest: Default::default(),
-            is_fetching_trending: Default::default(),
-
-            latest: Default::default(),
-            trending: Default::default(),
-
-            current_panel: Default::default(),
-            prev_panel: Default::default(),
-
-            conf: Default::default(),
-
-            about_setting: Default::default(),
-            latest_setting: Default::default(),
-            msg_spec: Default::default(),
-
-            tx: Arc::new(tx),
-            rx: Rc::new(RefCell::new(rx)),
-
-            cmc_pro_api_key: apikey::CMC_PRO_API_KEY.to_string(),
-
-            brand_icon: Default::default(),
-            refresh_icon: Default::default(),
-            language_icon: Default::default(),
-            about_icon: Default::default(),
-            back_icon: Default::default(),
-            circle_gray_icon: Default::default(),
-            circle_red_icon: Default::default(),
-            latest_icon: Default::default(),
-            trending_icon: Default::default(),
-        }
-    }
+    pub stats_icon: Option<TextureHandle>,
 }
 
 impl App {
+    pub fn new() -> Self {
+        let mut app = App::default();
+        let (tx, rx) = mpsc::sync_channel(10);
+        (app.tx, app.rx) = (Some(Arc::new(tx)), Some(Rc::new(RefCell::new(rx))));
+        app.cmc_pro_api_key = apikey::CMC_PRO_API_KEY.to_string();
+
+        app
+    }
+
     pub fn init(&mut self, ctx: &Context) {
         if let Err(e) = self.conf.init() {
             log::warn!("{e:?}");
@@ -199,8 +174,17 @@ impl App {
             Default::default(),
         ));
 
+        self.stats_icon = Some(ctx.load_texture(
+            "stats-icon",
+            theme::load_image_from_memory(theme::STATS_ICON),
+            Default::default(),
+        ));
+
         latest::init(self);
+        stats::init(self);
+
         self.fetch_latest();
+        self.fetch_stats();
     }
 
     // only call this function when switching to secondary layer, such as `about` panel
@@ -218,6 +202,7 @@ impl App {
             match self.current_panel {
                 CurrentPanel::Latest => latest::ui(self, ui),
                 CurrentPanel::Trending => trending::ui(self, ui),
+                CurrentPanel::Stats => stats::ui(self, ui),
                 CurrentPanel::About => about::ui(self, ui),
             }
 
@@ -236,6 +221,7 @@ impl App {
                         match self.current_panel {
                             CurrentPanel::Latest => "行情",
                             CurrentPanel::Trending => "热门",
+                            CurrentPanel::Stats => "指数",
                             _ => "",
                         },
                     ))
@@ -253,6 +239,7 @@ impl App {
                             match self.current_panel {
                                 CurrentPanel::Latest => self.is_scroll_to_top_latest = true,
                                 CurrentPanel::Trending => self.is_scroll_to_top_trending = true,
+                                CurrentPanel::Stats => self.is_scroll_to_top_stats = true,
                                 _ => (),
                             }
                         }
@@ -279,14 +266,14 @@ impl App {
                 if ui
                     .add(
                         ImageButton::new(
-                            self.trending_icon.clone().unwrap().id(),
-                            theme::ICON_SIZE * 0.8,
+                            self.stats_icon.clone().unwrap().id(),
+                            theme::ICON_SIZE * 0.9,
                         )
                         .frame(false),
                     )
                     .clicked()
                 {
-                    self.current_panel = CurrentPanel::Trending;
+                    self.current_panel = CurrentPanel::Stats;
                 }
 
                 if ui
@@ -323,24 +310,23 @@ impl App {
                     .clicked()
                 {
                     match self.current_panel {
-                        CurrentPanel::Latest => {
-                            self.fetch_latest();
-                        }
+                        CurrentPanel::Latest => self.fetch_latest(),
+                        CurrentPanel::Stats => self.fetch_stats(),
+                        CurrentPanel::Trending => todo!(),
                         _ => (),
                     }
                 }
 
-                // show refreshing tip
-                match self.current_panel {
-                    CurrentPanel::Latest => {
-                        if self.is_fetching_latest {
-                            ui.label(
-                                RichText::new(tr(self.conf.ui.is_cn, "正在刷新"))
-                                    .color(theme::TITLE_COLOR),
-                            );
-                        }
-                    }
-                    _ => (),
+                let is_show_refresh_text = match self.current_panel {
+                    CurrentPanel::Latest => self.is_fetching_latest,
+                    CurrentPanel::Stats => self.is_fetching_stats,
+                    _ => false,
+                };
+
+                if is_show_refresh_text {
+                    ui.label(
+                        RichText::new(tr(self.conf.ui.is_cn, "正在刷新")).color(theme::TITLE_COLOR),
+                    );
                 }
             });
         });
@@ -351,11 +337,13 @@ impl App {
     fn update_data(&mut self) {
         let rx = self.rx.clone();
 
-        if let Ok(item) = rx.borrow_mut().try_recv() {
+        if let Ok(item) = rx.unwrap().borrow_mut().try_recv() {
             match item {
                 ChannelItem::ErrMsg((panel, msg)) => {
                     match panel {
                         CurrentPanel::Latest => self.is_fetching_latest = false,
+                        CurrentPanel::Trending => self.is_fetching_trending = false,
+                        CurrentPanel::Stats => self.is_fetching_stats = false,
                         _ => (),
                     }
                     self.show_message(msg, MsgType::Warn);
@@ -377,6 +365,14 @@ impl App {
                         self.is_fetching_trending = false;
                         unimplemented!();
                     }
+                    ChannelInnerItem::Stats(item) => {
+                        if !item.errors.is_empty() {
+                            self.show_message(item.errors.join(" "), MsgType::Warn);
+                        } else {
+                            self.stats = item;
+                        }
+                        self.is_fetching_stats = false;
+                    }
                 },
             }
         };
@@ -395,10 +391,40 @@ impl App {
         std::thread::spawn(move || {
             match latest::fetch(&api_key, cache_dir.join("latest.json").as_path()) {
                 Err(e) => {
-                    _ = tx.try_send(ChannelItem::ErrMsg((CurrentPanel::Latest, e.to_string())));
+                    _ = tx
+                        .unwrap()
+                        .try_send(ChannelItem::ErrMsg((CurrentPanel::Latest, e.to_string())));
                 }
                 Ok(v) => {
-                    _ = tx.try_send(ChannelItem::Item(ChannelInnerItem::Latest(v)));
+                    _ = tx
+                        .unwrap()
+                        .try_send(ChannelItem::Item(ChannelInnerItem::Latest(v)));
+                }
+            }
+        });
+    }
+
+    fn fetch_stats(&mut self) {
+        if self.is_fetching_stats {
+            return;
+        }
+        self.is_fetching_stats = true;
+
+        let tx = self.tx.clone();
+        let cache_dir = self.conf.cache_dir.clone();
+        let api_key = String::default();
+
+        std::thread::spawn(move || {
+            match stats::fetch(&api_key, cache_dir.join("stats.json").as_path()) {
+                Err(e) => {
+                    _ = tx
+                        .unwrap()
+                        .try_send(ChannelItem::ErrMsg((CurrentPanel::Stats, e.to_string())));
+                }
+                Ok(v) => {
+                    _ = tx
+                        .unwrap()
+                        .try_send(ChannelItem::Item(ChannelInnerItem::Stats(v)));
                 }
             }
         });

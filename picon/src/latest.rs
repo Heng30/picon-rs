@@ -1,9 +1,5 @@
 use super::util;
-use super::{
-    app::{App, CurrentPanel},
-    theme,
-    tr::tr,
-};
+use super::{app::App, theme, tr::tr};
 use anyhow::{anyhow, Result};
 use egui::{
     containers::scroll_area::ScrollBarVisibility, Button, FontId, ImageButton, RichText,
