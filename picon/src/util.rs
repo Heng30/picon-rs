@@ -43,3 +43,34 @@ pub fn pretty_precent(p: f64) -> String {
         _ => format!("{:.2}%", p),
     }
 }
+
+pub fn format_number_with_commas(number_str: &str) -> String {
+    if number_str.is_empty() {
+        return String::default();
+    }
+
+    let chars: Vec<char> = number_str.chars().collect();
+    let decimal_index = chars.iter().position(|&c| c == '.').unwrap_or(chars.len());
+
+    let left_part = &mut chars[0..decimal_index]
+        .iter()
+        .rev()
+        .copied()
+        .collect::<Vec<char>>();
+
+    let right_part = &number_str[decimal_index..];
+
+    let mut chs = vec![];
+    for (i, ch) in left_part.iter().enumerate() {
+        chs.push(*ch);
+        if (i + 1) % 3 == 0 {
+            chs.push(',');
+        }
+    }
+
+    if chs[chs.len() - 1] == ',' {
+        chs.pop();
+    }
+
+    format!("{}{}", chs.iter().rev().collect::<String>(), right_part)
+}

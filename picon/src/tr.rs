@@ -55,6 +55,26 @@ pub fn tr(is_cn: bool, text: &str) -> String {
     items.insert("排名", "Rank");
     items.insert("代币", "Symbol");
     items.insert("价格", "Price");
+    items.insert("指数", "Stats");
+
+    items.insert("经济指数", "Economy");
+    items.insert("上证指数", "SZZS");
+    items.insert("深证成指", "SZSE");
+    items.insert("创业板指", "GEM");
+    items.insert("美元指数", "DXY");
+    items.insert("美国10年期国债收益率", "US 10Y Treasury Yield");
+    items.insert("标普500", "S&P500");
+    items.insert("离岸人民币", "CNH");
+
+    items.insert("加密指数", "Crypto");
+    items.insert("贪婪恐慌(今天/昨天)", "Greed Fear");
+    items.insert("加密总市值(USD)", "Total MarketCap(USD)");
+    items.insert("24h交易量(USD)", "24h Volumn(USD)");
+    items.insert("BTC市值占比", "BTC Domain");
+    items.insert("BTC油费(慢/正常/快)", "BTC Fee");
+    items.insert("ETH油费", "ETH Fee");
+
+
 
     items.get(text).unwrap_or(&text).to_string()
 }
