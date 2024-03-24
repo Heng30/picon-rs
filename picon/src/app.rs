@@ -184,7 +184,7 @@ impl App {
         stats::init(self);
 
         self.fetch_latest();
-        self.fetch_stats();
+        // self.fetch_stats();
     }
 
     // only call this function when switching to secondary layer, such as `about` panel
@@ -367,7 +367,7 @@ impl App {
                     }
                     ChannelInnerItem::Stats(item) => {
                         if !item.errors.is_empty() {
-                            self.show_message(item.errors.join(" "), MsgType::Warn);
+                            self.show_message(item.errors.join("\n\n"), MsgType::Warn);
                         } else {
                             self.stats = item;
                         }
